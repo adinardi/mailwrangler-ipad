@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17FA119D1197E15C006E7336 /* EditAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */; };
+		17FA119E1197E15C006E7336 /* EditAccountController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17FA119C1197E15C006E7336 /* EditAccountController.xib */; };
 		1D3623260D0F684500981E51 /* MailWranglerForiPadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MailWranglerForiPadAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17FA119A1197E15C006E7336 /* EditAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAccountController.h; sourceTree = "<group>"; };
+		17FA119B1197E15C006E7336 /* EditAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAccountController.m; sourceTree = "<group>"; };
+		17FA119C1197E15C006E7336 /* EditAccountController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EditAccountController.xib; path = Classes/EditAccountController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* MailWranglerForiPadAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailWranglerForiPadAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* MailWranglerForiPadAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MailWranglerForiPadAppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +69,8 @@
 				28042008108E984D000629CD /* RootViewController.m */,
 				28042009108E984D000629CD /* DetailViewController.h */,
 				2804200A108E984D000629CD /* DetailViewController.m */,
+				17FA119A1197E15C006E7336 /* EditAccountController.h */,
+				17FA119B1197E15C006E7336 /* EditAccountController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17FA119C1197E15C006E7336 /* EditAccountController.xib */,
 				2819300D112F7FA900ECF9B4 /* MailWranglerForiPad.xcdatamodeld */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				2804203B108E9BAB000629CD /* DetailView.xib */,
@@ -170,6 +178,7 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				2804203C108E9BAB000629CD /* DetailView.xib in Resources */,
+				17FA119E1197E15C006E7336 /* EditAccountController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +194,7 @@
 				2804200B108E984D000629CD /* RootViewController.m in Sources */,
 				2804200C108E984D000629CD /* DetailViewController.m in Sources */,
 				2819300E112F7FA900ECF9B4 /* MailWranglerForiPad.xcdatamodeld in Sources */,
+				17FA119D1197E15C006E7336 /* EditAccountController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,11 +233,13 @@
 			buildSettings = {
 				"ARCHS[sdk=iphoneos*]" = armv7;
 				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CODE_SIGN_ENTITLEMENTS = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos3.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

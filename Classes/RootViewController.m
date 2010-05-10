@@ -28,7 +28,8 @@
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
-    
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+	
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
@@ -96,8 +97,9 @@
     NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
 	
     // If appropriate, configure the new managed object.
-    [newManagedObject setValue:@"adinardi" forKey:@"username"];
-	[newManagedObject setValue:@"passwordHere" forKey:@"password"];
+    [newManagedObject setValue:@"username" forKey:@"username"];
+	[newManagedObject setValue:@"" forKey:@"password"];
+	[newManagedObject setValue:@"gmail.com" forKey:@"domain"];
     
     // Save the context.
     NSError *error = nil;
@@ -138,6 +140,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+		[cell setEditingAccessoryType:UITableViewCellAccessoryDetailDisclosureButton];
     }
     
     // Configure the cell.
@@ -188,6 +191,18 @@
     // Set the detail item in the detail view controller.
     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     detailViewController.detailItem = selectedObject;    
+}
+
+- (void)tableView:(UITableView *)aTableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+	NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+	//UINavigationController *navigationController = [[UINavigationController alloc] initWithNibName:@"EditAccountController" bundle:nil];
+	//[self presentModalViewController:navigationController animated:NO];
+	EditAccountController *acct = [[[EditAccountController alloc] initWithNibName:@"EditAccountController" bundle:nil] retain];
+	acct.account = selectedObject;
+	[self.view addSubview:acct.view];
+	//[self presentModalViewController:acct animated:YES];
+	[acct release];
+	//[navigationController release];
 }
 
 

@@ -8,19 +8,25 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "EditAccountController.h"
 
 
 @class DetailViewController;
 
+
 @interface RootViewController : UITableViewController <NSFetchedResultsControllerDelegate> {
     
     DetailViewController *detailViewController;
+	EditAccountController *editAccount;
     
     NSFetchedResultsController *fetchedResultsController;
     NSManagedObjectContext *managedObjectContext;
+	UIView *editView;
 }
 
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
+@property (nonatomic, retain) IBOutlet EditAccountController *editAccount;
+@property (nonatomic, retain) IBOutlet UIView *editView;
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;

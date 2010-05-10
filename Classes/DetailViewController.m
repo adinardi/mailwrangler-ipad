@@ -58,12 +58,21 @@
     // detailDescriptionLabel.text = [[detailItem valueForKey:@"timeStamp"] description];
 	
 	[webView setDelegate:self];
-	[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.google.com/accounts/ServiceLogin?service=mail&passive=true&rm=false&continue=http://mail.google.com/mail/"]]];
+	
+	NSString *domain = [detailItem valueForKey:@"domain"];
+	if ([domain compare:@"gmail.com"] == NSOrderedSame) {
+		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.google.com/accounts/ServiceLogin?service=mail&passive=true&rm=false&continue=http://mail.google.com/mail/"]]];
+	}
+	else {
+		NSString *domainString = [NSString stringWithFormat:@"https://mail.google.com/a/%@", domain];
+		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:domainString]]];
+	}
 }
 
 - (void) webViewDidFinishLoad:(UIWebView *) view {
 	NSString *username = [detailItem valueForKey:@"username"];
 	NSString *password = [detailItem valueForKey:@"password"];
+	// NSString *domain = [detailItem valueForKey:@"domain"];
 	
 	NSString *loginCode = [NSString stringWithFormat:@"\
 						   document.getElementById('Email').value = '%@'; \
