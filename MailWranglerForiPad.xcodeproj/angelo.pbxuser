@@ -488,7 +488,7 @@
 	};
 	1D3623250D0F684500981E51 /* MailWranglerForiPadAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2343, 2275}}";
+			sepNavIntBoundsRect = "{{0, 0}, {2371, 2223}}";
 			sepNavSelRange = "{5406, 38}";
 			sepNavVisRange = "{4672, 826}";
 		};
@@ -502,15 +502,15 @@
 	28042007108E984D000629CD /* RootViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1128, 533}}";
-			sepNavSelRange = "{425, 0}";
+			sepNavSelRange = "{312, 21}";
 			sepNavVisRange = "{0, 1017}";
 		};
 	};
 	28042008108E984D000629CD /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2371, 4329}}";
-			sepNavSelRange = "{7697, 0}";
-			sepNavVisRange = "{7166, 1634}";
+			sepNavIntBoundsRect = "{{0, 0}, {2371, 4420}}";
+			sepNavSelRange = "{877, 27}";
+			sepNavVisRange = "{52, 1491}";
 		};
 	};
 	28042009108E984D000629CD /* DetailViewController.h */ = {
@@ -523,8 +523,8 @@
 	2804200A108E984D000629CD /* DetailViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1128, 2821}}";
-			sepNavSelRange = "{545, 91}";
-			sepNavVisRange = "{160, 927}";
+			sepNavSelRange = "{313, 17}";
+			sepNavVisRange = "{160, 931}";
 		};
 	};
 	280420B3108E9F58000629CD /* MailWranglerForiPad.xcdatamodel */ = {
