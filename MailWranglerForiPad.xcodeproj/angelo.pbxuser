@@ -10,6 +10,30 @@
 		vrLen = 1313;
 		vrLoc = 192;
 	};
+	17C998EE119914E70039BB90 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
+		name = "EditAccountController.m: 31";
+		rLen = 0;
+		rLoc = 999;
+		rType = 0;
+		vrLen = 1311;
+		vrLoc = 191;
+	};
+	17C998EF119914E70039BB90 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
+	};
+	17C998F0119914E70039BB90 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
+		name = "DetailViewController.m: 53";
+		rLen = 0;
+		rLoc = 1185;
+		rType = 0;
+		vrLen = 1445;
+		vrLoc = 1260;
+	};
 	17E6E0CA1197F7A000A3D121 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
@@ -75,9 +99,9 @@
 	};
 	17FA119B1197E15C006E7336 /* EditAccountController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 962}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 949}}";
 			sepNavSelRange = "{999, 0}";
-			sepNavVisRange = "{192, 1313}";
+			sepNavVisRange = "{191, 1311}";
 		};
 	};
 	17FA11B61197E39F006E7336 /* PBXTextBookmark */ = {
@@ -150,7 +174,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 63";
 		rLen = 0;
-		rLoc = 1441;
+		rLoc = 1736;
 		rType = 0;
 		vrLen = 1673;
 		vrLoc = 991;
@@ -228,9 +252,9 @@
 	};
 	2804200A108E984D000629CD /* DetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1510, 2275}}";
-			sepNavSelRange = "{1441, 0}";
-			sepNavVisRange = "{991, 1673}";
+			sepNavIntBoundsRect = "{{0, 0}, {1128, 2600}}";
+			sepNavSelRange = "{1185, 0}";
+			sepNavVisRange = "{1260, 1445}";
 		};
 	};
 	280420B3108E9F58000629CD /* MailWranglerForiPad.xcdatamodel */ = {
@@ -401,7 +425,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 17FA11391197B484006E7336 /* MailWranglerForiPad */;
-		activeSDKPreference = iphoneos3.2;
+		activeSDKPreference = iphonesimulator3.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* MailWranglerForiPad */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* MailWranglerForiPad */,
@@ -433,11 +457,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 295172006;
-			PBXWorkspaceStateSaveDate = 295172006;
+			PBXPerProjectTemplateStateSaveDate = 295241631;
+			PBXWorkspaceStateSaveDate = 295241631;
 		};
 		perUserProjectItems = {
-			174E7F781197F7B60069D8E6 /* PBXTextBookmark */ = 174E7F781197F7B60069D8E6 /* PBXTextBookmark */;
+			174E7F781197F7B60069D8E6 = 174E7F781197F7B60069D8E6 /* PBXTextBookmark */;
+			17C998EE119914E70039BB90 /* PBXTextBookmark */ = 17C998EE119914E70039BB90 /* PBXTextBookmark */;
+			17C998EF119914E70039BB90 /* PBXBookmark */ = 17C998EF119914E70039BB90 /* PBXBookmark */;
+			17C998F0119914E70039BB90 /* PBXTextBookmark */ = 17C998F0119914E70039BB90 /* PBXTextBookmark */;
 			17E6E0CA1197F7A000A3D121 = 17E6E0CA1197F7A000A3D121 /* PBXTextBookmark */;
 			17FA11B61197E39F006E7336 = 17FA11B61197E39F006E7336 /* PBXTextBookmark */;
 			17FA11B71197E39F006E7336 = 17FA11B71197E39F006E7336 /* PBXTextBookmark */;

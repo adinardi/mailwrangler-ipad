@@ -44,6 +44,13 @@
 		detailItem = [managedObject retain];
 		
         // Update the view.
+		if ([[detailItem valueForKey:@"username"] compare:@"username"] == NSOrderedSame) {
+			return;
+		}
+		if ([[detailItem valueForKey:@"password"] compare:@""] == NSOrderedSame) {
+			return;
+		}
+		
         [self configureView];
 	}
     
@@ -60,16 +67,28 @@
 	[webView setDelegate:self];
 	
 	NSString *domain = [detailItem valueForKey:@"domain"];
+	//NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+	NSURL *url = nil;
 	if ([domain compare:@"gmail.com"] == NSOrderedSame) {
-		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.google.com/accounts/ServiceLogin?service=mail&passive=true&rm=false&continue=http://mail.google.com/mail/"]]];
+		url = [NSURL URLWithString:@"https://mail.google.com/mail/?logout"];
+	} else {
+		NSString *domainString = [NSString stringWithFormat:@"https://mail.google.com/a/%@/?logout", domain];
+		url = [NSURL URLWithString:domainString];
 	}
-	else {
-		NSString *domainString = [NSString stringWithFormat:@"https://mail.google.com/a/%@", domain];
-		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:domainString]]];
-	}
+		 
+//	NSArray *cookies = [storage cookiesForURL:url];
+//	NSEnumerator *enumerator = [cookies objectEnumerator];
+//	id object;
+//	while (object = [enumerator nextObject]) {
+//		NSLog(@"coookie %@", object);
+//		[storage deleteCookie:object];
+//	}
+	[webView loadRequest:[NSURLRequest requestWithURL:url]];		 
 }
 
 - (void) webViewDidFinishLoad:(UIWebView *) view {
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+	
 	NSString *username = [detailItem valueForKey:@"username"];
 	NSString *password = [detailItem valueForKey:@"password"];
 	// NSString *domain = [detailItem valueForKey:@"domain"];
@@ -80,6 +99,10 @@
 						   document.getElementById('gaia_loginform').submit();", username, password];
 	
 	[webView stringByEvaluatingJavaScriptFromString: loginCode];
+}
+
+- (void) webViewDidStartLoad:(UIWebView *) view {
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
 
 
