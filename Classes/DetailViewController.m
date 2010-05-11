@@ -57,7 +57,25 @@
     // Update the user interface for the detail item.
     // detailDescriptionLabel.text = [[detailItem valueForKey:@"timeStamp"] description];
 	
+	NSUInteger position = [self.view.subviews indexOfObject:webView];
+	NSLog(@"position %d", position);
+	[webView removeFromSuperview];
+	[webView release];
+	
+	webView = [[[UIWebView alloc] init] retain];
+	
+	if ([[UIDevice currentDevice] orientation] == UIInterfaceOrientationPortrait || [[UIDevice currentDevice] orientation] == UIInterfaceOrientationPortraitUpsideDown) {
+		[webView setFrame: CGRectMake(0.0, 44.0, 763.0, 957.0)];
+		NSLog(@"portrait");
+	}else{
+		[webView setFrame: CGRectMake(0.0, 44.0, 700.0, 700.0)];
+	}
 	[webView setDelegate:self];
+	[self.view addSubview:webView];
+	//[self.view insertSubview:webView atIndex:position];
+	// [webView setFrame:CGRectMake(0.0, 0.0, 100.0, 100.0)];
+	//[self.view bringSubviewToFront:webView];
+	//[self.view setNeedsDisplayInRect:[webView frame]];
 	
 	NSString *domain = [detailItem valueForKey:@"domain"];
 	if ([domain compare:@"gmail.com"] == NSOrderedSame) {
@@ -69,7 +87,13 @@
 	}
 }
 
+- (void) webViewDidStartLoad:(UIWebView *)view {
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+
 - (void) webViewDidFinishLoad:(UIWebView *) view {
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+	
 	NSString *username = [detailItem valueForKey:@"username"];
 	NSString *password = [detailItem valueForKey:@"password"];
 	// NSString *domain = [detailItem valueForKey:@"domain"];
@@ -118,6 +142,12 @@
 
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration {
+	if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+		[webView setFrame: CGRectMake(0.0, 44.0, 763.0, 957.0)];
+				NSLog(@"portrait");
+	}else{
+		[webView setFrame: CGRectMake(0.0, 44.0, 700.0, 700.0)];
+	}
 }
 
 
