@@ -30,6 +30,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+- (IBAction)insertNewObject:(id)sender;
 
 @property (nonatomic, retain) IBOutlet UISplitViewController *splitViewController;
 @property (nonatomic, retain) IBOutlet RootViewController *rootViewController;

@@ -116,6 +116,8 @@
     NSIndexPath *insertionPath = [fetchedResultsController indexPathForObject:newManagedObject];
     [self.tableView selectRowAtIndexPath:insertionPath animated:YES scrollPosition:UITableViewScrollPositionTop];
     detailViewController.detailItem = newManagedObject;
+	
+	[self showEditAccount:newManagedObject];
 }
 
 
@@ -195,14 +197,18 @@
 
 - (void)tableView:(UITableView *)aTableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
 	NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-	//UINavigationController *navigationController = [[UINavigationController alloc] initWithNibName:@"EditAccountController" bundle:nil];
-	//[self presentModalViewController:navigationController animated:NO];
+
+	[self showEditAccount:selectedObject];
+}
+
+- (void) showEditAccount:(NSManagedObject *) selectedObject {
 	EditAccountController *acct = [[[EditAccountController alloc] initWithNibName:@"EditAccountController" bundle:nil] retain];
 	acct.account = selectedObject;
+	//NSLog(@"frc %@", [self fetchedResultsController]);
+	//[acct setFetchedResultsController:[self fetchedResultsController]];
 	[self.view addSubview:acct.view];
 	//[self presentModalViewController:acct animated:YES];
 	[acct release];
-	//[navigationController release];
 }
 
 

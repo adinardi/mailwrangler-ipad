@@ -16,10 +16,14 @@
 	IBOutlet UITextField *usernameField;
 	IBOutlet UITextField *passwordField;
 	IBOutlet UITextField *domainField;
+	
+	NSFetchedResultsController *fetchedResultsController;
 }
 
 @property (nonatomic, retain) NSManagedObject *account;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 - (IBAction) hitSave:(id)selector;
+- (IBAction) hitCancel:(id)selector;
 
 @end

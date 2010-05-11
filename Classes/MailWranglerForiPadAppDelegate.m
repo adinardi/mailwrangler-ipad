@@ -160,6 +160,11 @@
 	[super dealloc];
 }
 
+- (IBAction)insertNewObject:(id)sender {
+	
+	[rootViewController insertNewObject:sender];	
+}
+
 
 @end
 
