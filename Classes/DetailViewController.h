@@ -23,6 +23,8 @@
     RootViewController *rootViewController;
     NSString *currentPassword;
     bool hasLoggedIn;
+    //NSString *content;
+    //NSString *fakeUrl;
 }
 
 @property (nonatomic, retain) NSString *currentPassword;

@@ -55,7 +55,7 @@
     hasLoggedIn = NO;
     
         // Update the view.
-		if ([[detailItem valueForKey:@"username"] compare:@"username"] == NSOrderedSame) {
+		if ([(NSString *)[detailItem valueForKey:@"username"] compare:@""] == NSOrderedSame) {
 			return;
 		}
 		if ([self.currentPassword compare:@""] == NSOrderedSame) {
@@ -115,18 +115,42 @@
                     document.getElementById('gaia_loginform').submit(); \
                     return 'OK'; \
                   } \
+                  try { \
+                    if (document.getElementsByName('viewport')[0].content.indexOf(', width=device-width') > -1) { \
+                      document.getElementsByName('viewport')[0].setAttribute('content', document.getElementsByName('viewport')[0].content.replace(', width=device-width', ', width=200')); \
+                    } \
+                  } catch (e) {} \
                   return 'NOTLOGINPAGE';\
                 }; \
                 mailwranglerLogin(); \
                   ", username, password];
 	
 	NSString *returnCode = [webView stringByEvaluatingJavaScriptFromString: loginCode];
-  NSLog(@"RETURN %@", returnCode);
+  NSLog(@"RETURN ");
   if ([returnCode compare:@"OK"] == NSOrderedSame) {
     hasLoggedIn = YES;
   } else if ([returnCode compare:@"FAIL"] == NSOrderedSame) {
     hasLoggedIn = NO;
+  } else if ([returnCode compare:@"NOTLOGINPAGE"] == NSOrderedSame) {
+    //if ([[[[webView request] URL] absoluteString] compare:@"about:blank"] == NSOrderedSame) {
+      //NSLog(@"OMG RELOADED");
+      //[webView loadHTMLString:content baseURL:fakeUrl];
+      //[content release];
+      //[fakeUrl release];
+    //}
+  } else {
+    //NSLog(@"reloading view:");
+    //NSURL *url = [[NSURL alloc] initWithString:[[[webView request] URL] absoluteString]];
+    //[webView stopLoading];
+    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
+    
+    //content = [returnCode retain];
+    //fakeUrl = [url retain];
   }
+}
+
+- (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+  NSLog(@"web view error %@", error);
 }
 
 - (void) webViewDidStartLoad:(UIWebView *) view {
@@ -140,6 +164,7 @@
 - (void)splitViewController: (UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController: (UIPopoverController*)pc {
     
     barButtonItem.title = @"Accounts";
+    //[toolbar setHidden:YES];
     NSMutableArray *items = [[toolbar items] mutableCopy];
     [items insertObject:barButtonItem atIndex:0];
     [toolbar setItems:items animated:YES];
@@ -155,6 +180,7 @@
     [items removeObjectAtIndex:0];
     [toolbar setItems:items animated:YES];
     [items release];
+    //[toolbar setHidden:YES];
     self.popoverController = nil;
 }
 

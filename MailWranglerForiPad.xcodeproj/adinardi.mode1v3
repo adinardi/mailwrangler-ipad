@@ -273,8 +273,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
-									<integer>13</integer>
+									<integer>6</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -316,7 +316,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DetailViewController.m</string>
+								<string>DetailViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,21 +324,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DetailViewController.m</string>
+										<string>DetailViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>64689F5A119FDC9E00BC28E4</string>
+										<string>6468A09811A00F4E00BC28E4</string>
 										<key>history</key>
 										<array>
 											<string>64689E77119F87AD00BC28E4</string>
 											<string>64689E7B119F87AD00BC28E4</string>
 											<string>64689E8A119F891C00BC28E4</string>
-											<string>64689EEF119F941900BC28E4</string>
-											<string>64689F2B119FD5BC00BC28E4</string>
-											<string>64689F41119FD8A000BC28E4</string>
-											<string>64689F42119FD8A000BC28E4</string>
-											<string>64689F43119FD8A000BC28E4</string>
+											<string>64689F84119FE3A400BC28E4</string>
+											<string>64689F85119FE3A400BC28E4</string>
+											<string>64689FF1119FF93C00BC28E4</string>
+											<string>6468A09711A00F4E00BC28E4</string>
+											<string>6468A08811A00D8400BC28E4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -536,11 +536,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>6468A09911A00F4E00BC28E4</string>
 		<string>64689F46119FD8A000BC28E4</string>
 		<string>64689F47119FD8A000BC28E4</string>
 		<string>64EF1846119F5B9E00511BA6</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/adinardi/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -565,7 +566,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RootViewController.m</string>
+								<string>DetailViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -719,10 +720,10 @@
 									<key>Frame</key>
 									<string>{{535, 0}, {641, 293}}</string>
 									<key>RubberWindowFrame</key>
-									<string>68 239 1176 616 0 0 1440 878 </string>
+									<string>104 247 1176 616 0 0 1440 878 </string>
 								</dict>
 								<key>RubberWindowFrame</key>
-								<string>68 239 1176 616 0 0 1440 878 </string>
+								<string>104 247 1176 616 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugSessionModule</string>
@@ -756,7 +757,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
 			<key>WindowString</key>
-			<string>68 239 1176 616 0 0 1440 878 </string>
+			<string>104 247 1176 616 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
@@ -892,7 +893,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {655, 592}}</string>
 								<key>RubberWindowFrame</key>
-								<string>78 135 655 633 0 0 1440 878 </string>
+								<string>77 126 655 633 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -921,7 +922,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>78 135 655 633 0 0 1440 878 </string>
+			<string>77 126 655 633 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
