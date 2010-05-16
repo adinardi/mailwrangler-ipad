@@ -97,7 +97,7 @@
     NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
 	
     // If appropriate, configure the new managed object.
-    [newManagedObject setValue:@"username" forKey:@"username"];
+    [newManagedObject setValue:@"" forKey:@"username"];
 	[newManagedObject setValue:@"" forKey:@"password"];
 	[newManagedObject setValue:@"gmail.com" forKey:@"domain"];
     
@@ -117,7 +117,7 @@
     [self.tableView selectRowAtIndexPath:insertionPath animated:YES scrollPosition:UITableViewScrollPositionTop];
     detailViewController.detailItem = newManagedObject;
 	
-	[self showEditAccount:newManagedObject];
+  [self showEditAccount:newManagedObject isNewAccount:YES];
 }
 
 - (void) passwordForAccount:(NSManagedObject *)account {
@@ -262,26 +262,29 @@
             detailViewController.detailItem = nil;
         }
         
-        NSManagedObjectContext *context = [fetchedResultsController managedObjectContext];
-        [context deleteObject:objectToDelete];
-        
-        NSError *error;
-        if (![context save:&error]) {
-            /*
-             Replace this implementation with code to handle the error appropriately.
-             
-             abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-             */
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        }
+        [self removeAccount:objectToDelete];
     }   
+}
+
+- (void) removeAccount:(NSManagedObject *) object {
+  NSManagedObjectContext *context = [fetchedResultsController managedObjectContext];
+  [context deleteObject:object];
+  NSError *error;
+  if (![context save:&error]) {
+      /*
+       Replace this implementation with code to handle the error appropriately.
+       
+       abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
+       */
+      NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+      abort();
+  }
 }
 
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // The table view should not be re-orderable.
-    return NO;
+    return YES;
 }
 
 
@@ -298,12 +301,13 @@
 - (void)tableView:(UITableView *)aTableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
 	NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
 
-	[self showEditAccount:selectedObject];
+	[self showEditAccount:selectedObject isNewAccount:NO];
 }
 
-- (void) showEditAccount:(NSManagedObject *) selectedObject {
+- (void) showEditAccount:(NSManagedObject *) selectedObject isNewAccount:(bool)isNewAccount {
 	EditAccountController *acct = [[[EditAccountController alloc] initWithNibName:@"EditAccountController" bundle:nil] retain];
-
+  
+  acct.isNewAccount = isNewAccount;
   acct.rootViewController = self;
 	acct.account = selectedObject;
 	//NSLog(@"frc %@", [self fetchedResultsController]);

@@ -11,7 +11,7 @@
 
 @implementation EditAccountController
 
-@synthesize rootViewController;
+@synthesize rootViewController, isNewAccount;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -81,7 +81,10 @@
 - (void) hitCancel:(id)selector {
 	//NSManagedObjectContext *context = [fetchedResultsController managedObjectContext];
 	//[context deleteObject:account];
-	[self.view removeFromSuperview];
+  if (isNewAccount) {
+    [self.rootViewController removeAccount:account];
+  }
+  [self.view removeFromSuperview];
 }
 
 

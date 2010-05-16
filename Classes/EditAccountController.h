@@ -13,6 +13,7 @@
 
 @interface EditAccountController : UIViewController {
 	NSManagedObject *account;
+  bool isNewAccount;
 	
 	IBOutlet UITextField *usernameField;
 	IBOutlet UITextField *passwordField;
@@ -25,6 +26,7 @@
 @property (nonatomic, retain) NSManagedObject *account;
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, assign) RootViewController *rootViewController;
+@property bool isNewAccount;
 
 - (IBAction) hitSave:(id)selector;
 - (IBAction) hitCancel:(id)selector;
