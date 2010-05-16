@@ -21,8 +21,10 @@
 	UIWebView *webView;
 
     RootViewController *rootViewController;
+    NSString *currentPassword;
 }
 
+@property (nonatomic, retain) NSString *currentPassword;
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
 
 @property (nonatomic, retain) NSManagedObject *detailItem;

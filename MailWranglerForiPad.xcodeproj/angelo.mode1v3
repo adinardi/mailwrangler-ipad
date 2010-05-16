@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -271,7 +273,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>3</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -307,14 +309,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RootViewController.m</string>
+								<string>MailWranglerForiPadAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,24 +322,24 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RootViewController.m</string>
+										<string>MailWranglerForiPadAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>17F2DA901199281F00740CCF</string>
+										<string>17F2DA9D1199C93600740CCF</string>
 										<key>history</key>
 										<array>
 											<string>17FA11B61197E39F006E7336</string>
 											<string>17FA11B71197E39F006E7336</string>
 											<string>17FA12541197F2A4006E7336</string>
-											<string>17F2DA5311991CFA00740CCF</string>
-											<string>17F2DA5411991CFA00740CCF</string>
-											<string>17F2DA6D119923A300740CCF</string>
-											<string>17F2DA7E1199268600740CCF</string>
 											<string>17F2DA7F1199268600740CCF</string>
-											<string>17F2DA801199268600740CCF</string>
 											<string>17F2DA8A119927E900740CCF</string>
-											<string>17F2DA8B119927E900740CCF</string>
+											<string>17F2DA971199C93600740CCF</string>
+											<string>17F2DA981199C93600740CCF</string>
+											<string>17F2DA991199C93600740CCF</string>
+											<string>17F2DA9A1199C93600740CCF</string>
+											<string>17F2DA9B1199C93600740CCF</string>
+											<string>17F2DA9C1199C93600740CCF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

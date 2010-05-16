@@ -11,6 +11,8 @@
 
 @implementation EditAccountController
 
+@synthesize rootViewController;
+
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -27,7 +29,11 @@
     [super viewDidLoad];
 	// NSLog(@"editing %@", [account valueForKey:@"username"]);
 	[usernameField setText:[account valueForKey:@"username"]];
+
+  [rootViewController passwordForAccount:account];
 	[passwordField setText:[account valueForKey:@"password"]];
+  [account setValue:@"" forKey:@"password"];
+
 	[domainField setText:[account valueForKey:@"domain"]];
 }
 
@@ -67,6 +73,8 @@
 	[account setValue:usernameField.text forKey:@"username"];
 	[account setValue:passwordField.text forKey:@"password"];
 	[account setValue:domainField.text forKey:@"domain"];
+  [rootViewController storePasswordForAccount:account];
+  [account setValue:@"" forKey:@"password"];
 	[self.view removeFromSuperview];
 }
 

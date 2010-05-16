@@ -19,7 +19,7 @@
 
 @implementation DetailViewController
 
-@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel, rootViewController;
+@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel, rootViewController, currentPassword;
 
 
 #pragma mark -
@@ -43,11 +43,15 @@
 		[detailItem release];
 		detailItem = [managedObject retain];
 		
+    [rootViewController passwordForAccount:detailItem];
+    self.currentPassword = [detailItem valueForKey:@"password"];
+    [detailItem setValue:@"" forKey:@"password"];
+    
         // Update the view.
 		if ([[detailItem valueForKey:@"username"] compare:@"username"] == NSOrderedSame) {
 			return;
 		}
-		if ([[detailItem valueForKey:@"password"] compare:@""] == NSOrderedSame) {
+		if ([self.currentPassword compare:@""] == NSOrderedSame) {
 			return;
 		}
 		
@@ -90,7 +94,7 @@
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 	
 	NSString *username = [detailItem valueForKey:@"username"];
-	NSString *password = [detailItem valueForKey:@"password"];
+	NSString *password = self.currentPassword;
 	// NSString *domain = [detailItem valueForKey:@"domain"];
 	
 	NSString *loginCode = [NSString stringWithFormat:@"\

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <Security/Security.h>
 #import "EditAccountController.h"
 
 
@@ -32,5 +33,8 @@
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 - (void)insertNewObject:(id)sender;
+- (void) showEditAccount:(NSManagedObject *)selectedObject;
+- (void) passwordForAccount:(NSManagedObject *)account;
+- (void) storePasswordForAccount:(NSManagedObject *)account;
 
 @end

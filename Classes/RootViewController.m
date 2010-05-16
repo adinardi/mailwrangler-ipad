@@ -120,6 +120,106 @@
 	[self showEditAccount:newManagedObject];
 }
 
+- (void) passwordForAccount:(NSManagedObject *)account {
+  NSMutableDictionary *passwordQuery = [[NSMutableDictionary alloc] init];
+  OSStatus keychainErr = noErr;
+  
+  [passwordQuery setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
+
+  NSMutableString *username = [NSMutableString stringWithString:[account valueForKey:@"username"]];
+  [username appendString:@"@"];
+  [username appendString:[account valueForKey:@"domain"]];
+
+  NSData *keychainItemID = [NSData dataWithBytes:[username UTF8String]
+                            length:strlen([username UTF8String])];
+
+  // [passwordQuery setObject:keychainItemID forKey:(id)kSecAttrGeneric];
+  [passwordQuery setObject:username forKey:(id)kSecAttrAccount];
+  [passwordQuery setObject:(id)kSecMatchLimitOne forKey:(id)kSecMatchLimit];
+  // [passwordQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
+  [passwordQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
+  
+  // NSMutableDictionary *outDictionary = nil;
+  NSData *passwordData = nil;
+  keychainErr = SecItemCopyMatching((CFDictionaryRef)passwordQuery, (CFTypeRef *)&passwordData);
+  
+  NSString *password;
+  if (keychainErr == noErr) {
+      // Convert the data dictionary into the format used by the view controller:
+      password = [[[NSString alloc] initWithBytes:[passwordData bytes]
+             length:[passwordData length] encoding:NSUTF8StringEncoding] autorelease];
+  } else if (keychainErr == errSecItemNotFound) {
+      // Put default values into the keychain if no matching
+      // keychain item is found:
+      // [self resetKeychainItem];
+      password = [[[NSString alloc] init] autorelease];
+  } else {
+      // Any other error is unexpected.
+      NSAssert(NO, @"Serious error.\n");
+  }
+  
+  [account setValue:password forKey:@"password"];
+  [passwordData release];
+  [passwordQuery release];
+}
+
+- (void) storePasswordForAccount:(NSManagedObject *)account {
+  NSMutableDictionary *passwordQuery = [[NSMutableDictionary alloc] init];
+  // OSStatus keychainErr = noErr;
+  
+  [passwordQuery setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
+  
+  NSMutableString *username = [NSMutableString stringWithString:[account valueForKey:@"username"]];
+  [username appendString:@"@"];
+  [username appendString:[account valueForKey:@"domain"]];
+
+  NSLog(@"Working with ID: %@", username);
+  NSData *keychainItemID = [NSData dataWithBytes:[username UTF8String]
+                            length:strlen([username UTF8String])];
+  
+  // [passwordQuery setObject:keychainItemID forKey:(id)kSecAttrGeneric];
+  [passwordQuery setObject:username forKey:(id)kSecAttrAccount];
+  [passwordQuery setObject:(id)kSecMatchLimitOne forKey:(id)kSecMatchLimit];
+  [passwordQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
+  // [passwordQuery setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
+  
+  NSDictionary *passwordData = nil;
+  NSMutableDictionary *newPasswordData = nil;
+  
+  if (SecItemCopyMatching((CFDictionaryRef)passwordQuery, (CFTypeRef *)&passwordData) == noErr) {
+    newPasswordData = [NSMutableDictionary dictionaryWithDictionary:passwordData];
+    [newPasswordData setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
+    // [newPasswordData setObject:[[account valueForKey:@"password"] dataUsingEncoding:NSUTF8StringEncoding] forKey:(id)kSecValueData];
+    
+    NSMutableDictionary *keychainData = [NSMutableDictionary dictionary];
+    [keychainData setObject:[[account valueForKey:@"password"] dataUsingEncoding:NSUTF8StringEncoding] forKey:(id)kSecValueData];
+    
+    OSStatus status = SecItemUpdate((CFDictionaryRef)newPasswordData,
+                (CFDictionaryRef)keychainData);
+    if (status != noErr) {
+      NSLog(@"Couldn't update the Keychain Item. %d", status);
+    }
+  } else {
+    newPasswordData = [NSMutableDictionary dictionary];
+    
+    //[newPasswordData setObject:keychainItemID forKey:(id)kSecAttrGeneric];
+    [newPasswordData setObject:username forKey:(id)kSecAttrAccount];
+    [newPasswordData setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
+ 
+    //NSMutableDictionary *keychainData = [NSMutableDictionary dictionary];
+    [newPasswordData setObject:[[account valueForKey:@"password"] dataUsingEncoding:NSUTF8StringEncoding] forKey:(id)kSecValueData];
+    
+    OSStatus status = SecItemAdd((CFDictionaryRef)newPasswordData, NULL);
+    
+    if (status != noErr) {
+      NSLog(@"Couldn't add the Keychain Item. %d", status);
+    } else {
+      //[self storePasswordForAccount:account];
+      NSLog(@"Stored data %d", status);
+    }
+  }
+}
+
 
 #pragma mark -
 #pragma mark Table view data source
@@ -203,6 +303,8 @@
 
 - (void) showEditAccount:(NSManagedObject *) selectedObject {
 	EditAccountController *acct = [[[EditAccountController alloc] initWithNibName:@"EditAccountController" bundle:nil] retain];
+
+  acct.rootViewController = self;
 	acct.account = selectedObject;
 	//NSLog(@"frc %@", [self fetchedResultsController]);
 	//[acct setFetchedResultsController:[self fetchedResultsController]];

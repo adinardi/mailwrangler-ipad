@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+@class RootViewController;
 
 @interface EditAccountController : UIViewController {
 	NSManagedObject *account;
@@ -18,10 +19,12 @@
 	IBOutlet UITextField *domainField;
 	
 	NSFetchedResultsController *fetchedResultsController;
+  RootViewController *rootViewController;
 }
 
 @property (nonatomic, retain) NSManagedObject *account;
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, assign) RootViewController *rootViewController;
 
 - (IBAction) hitSave:(id)selector;
 - (IBAction) hitCancel:(id)selector;
