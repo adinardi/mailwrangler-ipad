@@ -22,6 +22,7 @@
 
     RootViewController *rootViewController;
     NSString *currentPassword;
+    bool hasLoggedIn;
 }
 
 @property (nonatomic, retain) NSString *currentPassword;

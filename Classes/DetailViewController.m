@@ -38,14 +38,21 @@
  When setting the detail item, update the view and dismiss the popover controller if it's showing.
  */
 - (void)setDetailItem:(NSManagedObject *)managedObject {
-    
-	if (detailItem != managedObject) {
+  // This indicates that the account we were showing was probably deleted.
+  if (managedObject == nil) {
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
+    return;
+  }  
+  
+	if (detailItem != managedObject || hasLoggedIn == NO) {
 		[detailItem release];
 		detailItem = [managedObject retain];
-		
+
     [rootViewController passwordForAccount:detailItem];
     self.currentPassword = [detailItem valueForKey:@"password"];
     [detailItem setValue:@"" forKey:@"password"];
+    
+    hasLoggedIn = NO;
     
         // Update the view.
 		if ([[detailItem valueForKey:@"username"] compare:@"username"] == NSOrderedSame) {
@@ -98,11 +105,28 @@
 	// NSString *domain = [detailItem valueForKey:@"domain"];
 	
 	NSString *loginCode = [NSString stringWithFormat:@"\
-						   document.getElementById('Email').value = '%@'; \
-						   document.getElementById('Passwd').value = '%@'; \
-						   document.getElementById('gaia_loginform').submit();", username, password];
+                function mailwranglerLogin() { \
+                  if (document.getElementById('errormsg_0_Passwd')) { \
+                    return 'FAIL'; \
+                  } \
+                  if (document.getElementById('gaia_loginform')) { \
+                    document.getElementById('Email').value = '%@'; \
+                    document.getElementById('Passwd').value = '%@'; \
+                    document.getElementById('gaia_loginform').submit(); \
+                    return 'OK'; \
+                  } \
+                  return 'NOTLOGINPAGE';\
+                }; \
+                mailwranglerLogin(); \
+                  ", username, password];
 	
-	[webView stringByEvaluatingJavaScriptFromString: loginCode];
+	NSString *returnCode = [webView stringByEvaluatingJavaScriptFromString: loginCode];
+  NSLog(@"RETURN %@", returnCode);
+  if ([returnCode compare:@"OK"] == NSOrderedSame) {
+    hasLoggedIn = YES;
+  } else if ([returnCode compare:@"FAIL"] == NSOrderedSame) {
+    hasLoggedIn = NO;
+  }
 }
 
 - (void) webViewDidStartLoad:(UIWebView *) view {
