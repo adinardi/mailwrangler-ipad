@@ -193,6 +193,7 @@
 						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
 						<float key="IBUIMinimumFontSize">17</float>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
+							<int key="IBUIAutocorrectionType">1</int>
 							<int key="IBUIKeyboardType">3</int>
 							<int key="IBUIReturnKeyType">9</int>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -218,7 +219,7 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="756892021"/>
 					</object>
-					<object class="IBUILabel" id="611125530">
+					<object class="IBUILabel" id="261123209">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 14}, {90, 21}}</string>
@@ -234,7 +235,7 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 					</object>
-					<object class="IBUITextField" id="414518217">
+					<object class="IBUITextField" id="124317849">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">294</int>
 						<string key="NSFrame">{{112, 11}, {124, 31}}</string>
@@ -354,7 +355,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="414518217"/>
+						<reference key="source" ref="124317849"/>
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">31</int>
@@ -363,7 +364,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">descriptionField</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="414518217"/>
+						<reference key="destination" ref="124317849"/>
 					</object>
 					<int key="connectionID">32</int>
 				</object>
@@ -401,8 +402,8 @@
 							<reference ref="669585324"/>
 							<reference ref="626751632"/>
 							<reference ref="154273138"/>
-							<reference ref="611125530"/>
-							<reference ref="414518217"/>
+							<reference ref="261123209"/>
+							<reference ref="124317849"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -448,12 +449,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">29</int>
-						<reference key="object" ref="611125530"/>
+						<reference key="object" ref="261123209"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">30</int>
-						<reference key="object" ref="414518217"/>
+						<reference key="object" ref="124317849"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 				</object>
