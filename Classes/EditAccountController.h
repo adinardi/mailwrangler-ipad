@@ -11,7 +11,7 @@
 
 @class RootViewController;
 
-@interface EditAccountController : UIViewController {
+@interface EditAccountController : UIViewController <UITextFieldDelegate> {
 	NSManagedObject *account;
   bool isNewAccount;
 	
@@ -30,5 +30,7 @@
 
 - (IBAction) hitSave:(id)selector;
 - (IBAction) hitCancel:(id)selector;
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField;
 
 @end

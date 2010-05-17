@@ -87,5 +87,16 @@
   [self.view removeFromSuperview];
 }
 
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+  if (textField == usernameField) {
+    [passwordField becomeFirstResponder];
+  } else if (textField == passwordField) {
+    [domainField becomeFirstResponder];
+  } else if (textField == domainField) {
+    [self hitSave:textField];
+  }
+  return NO;
+}
+
 
 @end
