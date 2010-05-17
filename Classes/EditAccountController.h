@@ -14,7 +14,8 @@
 @interface EditAccountController : UIViewController <UITextFieldDelegate> {
 	NSManagedObject *account;
   bool isNewAccount;
-	
+  
+  IBOutlet UITextField *descriptionField;
 	IBOutlet UITextField *usernameField;
 	IBOutlet UITextField *passwordField;
 	IBOutlet UITextField *domainField;

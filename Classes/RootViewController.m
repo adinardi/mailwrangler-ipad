@@ -77,7 +77,7 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
     NSManagedObject *managedObject = [fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[managedObject valueForKey:@"username"] description];
+    cell.textLabel.text = [[managedObject valueForKey:@"desc"] description];
 }
 
 
@@ -97,9 +97,10 @@
     NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
 	
     // If appropriate, configure the new managed object.
+    [newManagedObject setValue:@"" forKey:@"desc"];
     [newManagedObject setValue:@"" forKey:@"username"];
-	[newManagedObject setValue:@"" forKey:@"password"];
-	[newManagedObject setValue:@"gmail.com" forKey:@"domain"];
+    [newManagedObject setValue:@"" forKey:@"password"];
+    [newManagedObject setValue:@"gmail.com" forKey:@"domain"];
     
     // Save the context.
     NSError *error = nil;
@@ -340,7 +341,7 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"username" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"desc" ascending:NO];
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];

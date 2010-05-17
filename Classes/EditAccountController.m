@@ -29,6 +29,7 @@
     [super viewDidLoad];
 	// NSLog(@"editing %@", [account valueForKey:@"username"]);
 	[usernameField setText:[account valueForKey:@"username"]];
+  [descriptionField setText:[account valueForKey:@"desc"]];
 
   [rootViewController passwordForAccount:account];
 	[passwordField setText:[account valueForKey:@"password"]];
@@ -70,9 +71,11 @@
 }
 
 - (void) hitSave:(id)selector {
+  [account setValue:descriptionField.text forKey:@"desc"];
 	[account setValue:usernameField.text forKey:@"username"];
 	[account setValue:passwordField.text forKey:@"password"];
 	[account setValue:domainField.text forKey:@"domain"];
+
   [rootViewController storePasswordForAccount:account];
   [account setValue:@"" forKey:@"password"];
 	[self.view removeFromSuperview];
@@ -88,7 +91,9 @@
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
-  if (textField == usernameField) {
+  if (textField == descriptionField) {
+    [usernameField becomeFirstResponder];
+  } else if (textField == usernameField) {
     [passwordField becomeFirstResponder];
   } else if (textField == passwordField) {
     [domainField becomeFirstResponder];
