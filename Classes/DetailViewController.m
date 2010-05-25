@@ -195,10 +195,10 @@
 
 	// Remove the previous item. Apparently this gets called frequently if the 
 	// modal browser comes up and down -- and this gets inserted weirdly.
-	[items removeObjectAtIndex:0];
-
-    [items insertObject:barButtonItem atIndex:0];
-    [toolbar setItems:items animated:YES];
+	if (![items containsObject:barButtonItem]) {
+		[items insertObject:barButtonItem atIndex:0];
+		[toolbar setItems:items animated:YES];
+	}
     [items release];
     self.popoverController = pc;
 }
