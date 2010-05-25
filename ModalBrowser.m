@@ -31,7 +31,7 @@
 											   initWithBarButtonSystemItem:UIBarButtonSystemItemDone
 											   target:self
 											   action:@selector(dismissView:)] autorelease];
-	
+	showingActions = NO;
 
 }
 
@@ -106,6 +106,34 @@
     [delegate didDismissModalView];
 }
 
+- (void) doAction:(id)selector {
+	if (!showingActions) {
+		UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Open in Safari", nil];
+	
+		[sheet showFromBarButtonItem:actionBtn animated:YES];
+		[sheet release];
+	
+		showingActions = YES;
+	}
+}
+
+- (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (buttonIndex == 0) {
+		[[UIApplication sharedApplication] openURL:[[webView request] URL]];
+	}
+}
+
+- (void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+	showingActions = NO;
+}
+
+- (void) actionSheetCancel:(UIActionSheet *)actionSheet {
+	showingActions = NO;
+}
+
+- (void) doReload:(id)selector {
+	[webView reload];
+}
 
 - (void)dealloc {
     [super dealloc];

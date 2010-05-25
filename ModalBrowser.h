@@ -14,12 +14,15 @@
 
 @end
 
-@interface ModalBrowser : UIViewController <UIWebViewDelegate> {
+@interface ModalBrowser : UIViewController <UIWebViewDelegate, UIActionSheetDelegate> {
 	IBOutlet UIWebView *webView;
 	id<ModalViewControllerDelegate> delegate;
 	
 	IBOutlet UIBarButtonItem *backBtn;
 	IBOutlet UIBarButtonItem *forwardBtn;
+	IBOutlet UIBarButtonItem *actionBtn;
+	
+	BOOL showingActions;
 }
 
 - (void) updateNavButtons;
@@ -27,6 +30,8 @@
 
 - (IBAction) goBack:(id)selector;
 - (IBAction) goForward:(id)selector;
+- (IBAction) doAction:(id)selector;
+- (IBAction) doReload:(id)selector;
 
 @property (nonatomic, assign) id<ModalViewControllerDelegate> delegate;
 @property (nonatomic, assign) UIWebView *webView;
