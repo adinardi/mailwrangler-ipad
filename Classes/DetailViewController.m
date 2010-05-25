@@ -126,7 +126,7 @@
                   ", username, password];
 	
 	NSString *returnCode = [webView stringByEvaluatingJavaScriptFromString: loginCode];
-  NSLog(@"RETURN ");
+  //NSLog(@"RETURN ");
   if ([returnCode compare:@"OK"] == NSOrderedSame) {
     hasLoggedIn = YES;
   } else if ([returnCode compare:@"FAIL"] == NSOrderedSame) {
@@ -150,11 +150,11 @@
 }
 
 - (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-  NSLog(@"web view error %@", error);
+  //NSLog(@"web view error %@", error);
 }
 
 - (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-	NSLog(@"web view should load %@, %d", request, navigationType);
+	//NSLog(@"web view should load %@, %d", request, navigationType);
 	
 	if (navigationType == UIWebViewNavigationTypeLinkClicked) {
 		ModalBrowser *modalBrowser = [[ModalBrowser alloc] initWithNibName:@"ModalBrowser" bundle:nil];
