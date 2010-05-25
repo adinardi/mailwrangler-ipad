@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17116AF611ABA1DF000CD6CD /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 17116AF211ABA1DF000CD6CD /* backBtn.png */; };
+		17116AF811ABA1DF000CD6CD /* forwardBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 17116AF411ABA1DF000CD6CD /* forwardBtn.png */; };
 		17899DFE11A9202000FCCABA /* ModalBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 17899DFC11A9202000FCCABA /* ModalBrowser.m */; };
 		17899DFF11A9202000FCCABA /* ModalBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17899DFD11A9202000FCCABA /* ModalBrowser.xib */; };
 		17FA119D1197E15C006E7336 /* EditAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17116AF211ABA1DF000CD6CD /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn.png; sourceTree = "<group>"; };
+		17116AF411ABA1DF000CD6CD /* forwardBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardBtn.png; sourceTree = "<group>"; };
 		17899DFB11A9202000FCCABA /* ModalBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModalBrowser.h; path = ../ModalBrowser.h; sourceTree = "<group>"; };
 		17899DFC11A9202000FCCABA /* ModalBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModalBrowser.m; path = ../ModalBrowser.m; sourceTree = "<group>"; };
 		17899DFD11A9202000FCCABA /* ModalBrowser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalBrowser.xib; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17116AF211ABA1DF000CD6CD /* backBtn.png */,
+				17116AF411ABA1DF000CD6CD /* forwardBtn.png */,
 				649872CA11A12BB700DBF2FD /* LogoLarge.png */,
 				649872CB11A12BB700DBF2FD /* LogoMedium.png */,
 				649872CC11A12BB700DBF2FD /* LogoSmall.png */,
@@ -204,6 +210,8 @@
 				649872CE11A12BB700DBF2FD /* LogoMedium.png in Resources */,
 				649872CF11A12BB700DBF2FD /* LogoSmall.png in Resources */,
 				17899DFF11A9202000FCCABA /* ModalBrowser.xib in Resources */,
+				17116AF611ABA1DF000CD6CD /* backBtn.png in Resources */,
+				17116AF811ABA1DF000CD6CD /* forwardBtn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

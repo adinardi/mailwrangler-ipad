@@ -48,12 +48,36 @@
 	return YES;
 }
 
+- (void) goBack:(id)selector {
+	[webView goBack];
+}
+
+- (void) goForward:(id)selector {
+	[webView goForward];
+}
+
 - (void) webViewDidStartLoad:(UIWebView *)webView {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+	[self updateNavButtons];
 }
 
 - (void) webViewDidFinishLoad:(UIWebView *)webView {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+	[self updateNavButtons];
+}
+
+- (void) updateNavButtons {
+	if([webView canGoBack]) {
+		backBtn.enabled = YES;
+	} else {
+		backBtn.enabled = NO;
+	}
+	
+	if ([webView canGoForward]) {
+		forwardBtn.enabled = YES;
+	} else {
+		forwardBtn.enabled = NO;
+	}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

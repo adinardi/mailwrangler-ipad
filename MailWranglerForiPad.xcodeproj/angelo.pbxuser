@@ -72,16 +72,16 @@
 	};
 	17899DFB11A9202000FCCABA /* ModalBrowser.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1128, 527}}";
-			sepNavSelRange = "{522, 0}";
-			sepNavVisRange = "{0, 529}";
+			sepNavIntBoundsRect = "{{0, 0}, {1128, 521}}";
+			sepNavSelRange = "{563, 0}";
+			sepNavVisRange = "{0, 579}";
 		};
 	};
 	17899DFC11A9202000FCCABA /* ModalBrowser.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1014}}";
-			sepNavSelRange = "{744, 0}";
-			sepNavVisRange = "{624, 1075}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 1118}}";
+			sepNavSelRange = "{1287, 0}";
+			sepNavVisRange = "{566, 1141}";
 		};
 	};
 	17899E0111A9203400FCCABA /* PBXTextBookmark */ = {
@@ -140,7 +140,7 @@
 		fRef = 17899DFB11A9202000FCCABA /* ModalBrowser.h */;
 		name = "ModalBrowser.h: 15";
 		rLen = 0;
-		rLoc = 523;
+		rLoc = 573;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 0;
@@ -270,7 +270,7 @@
 		fRef = 17899DFB11A9202000FCCABA /* ModalBrowser.h */;
 		name = "ModalBrowser.h: 16";
 		rLen = 0;
-		rLoc = 522;
+		rLoc = 572;
 		rType = 0;
 		vrLen = 327;
 		vrLoc = 0;
@@ -350,7 +350,7 @@
 		fRef = 17899DFB11A9202000FCCABA /* ModalBrowser.h */;
 		name = "ModalBrowser.h: 16";
 		rLen = 0;
-		rLoc = 522;
+		rLoc = 572;
 		rType = 0;
 		vrLen = 327;
 		vrLoc = 0;
@@ -380,7 +380,7 @@
 		fRef = 17899DFB11A9202000FCCABA /* ModalBrowser.h */;
 		name = "ModalBrowser.h: 25";
 		rLen = 0;
-		rLoc = 522;
+		rLoc = 572;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 0;
@@ -390,7 +390,7 @@
 		fRef = 17899DFB11A9202000FCCABA /* ModalBrowser.h */;
 		name = "ModalBrowser.h: 25";
 		rLen = 0;
-		rLoc = 522;
+		rLoc = 572;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 0;
@@ -430,7 +430,7 @@
 		fRef = 17899DFC11A9202000FCCABA /* ModalBrowser.m */;
 		name = "ModalBrowser.m: 66";
 		rLen = 0;
-		rLoc = 1964;
+		rLoc = 2236;
 		rType = 0;
 		vrLen = 755;
 		vrLoc = 994;
@@ -440,7 +440,7 @@
 		fRef = 17899DFC11A9202000FCCABA /* ModalBrowser.m */;
 		name = "ModalBrowser.m: 66";
 		rLen = 0;
-		rLoc = 1964;
+		rLoc = 2236;
 		rType = 0;
 		vrLen = 755;
 		vrLoc = 994;
@@ -450,7 +450,7 @@
 		fRef = 17899DFB11A9202000FCCABA /* ModalBrowser.h */;
 		name = "ModalBrowser.h: 25";
 		rLen = 0;
-		rLoc = 522;
+		rLoc = 572;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 0;
@@ -540,7 +540,7 @@
 		fRef = 17899DFB11A9202000FCCABA /* ModalBrowser.h */;
 		name = "ModalBrowser.h: 25";
 		rLen = 0;
-		rLoc = 522;
+		rLoc = 572;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 0;
@@ -560,7 +560,7 @@
 		fRef = 17899DFC11A9202000FCCABA /* ModalBrowser.m */;
 		name = "ModalBrowser.m: 42";
 		rLen = 0;
-		rLoc = 1205;
+		rLoc = 1477;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 723;
@@ -848,14 +848,14 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1139, 559}}";
 			sepNavSelRange = "{428, 0}";
-			sepNavVisRange = "{0, 1181}";
+			sepNavVisRange = "{0, 1140}";
 		};
 	};
 	2804200A108E984D000629CD /* DetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1510, 3575}}";
-			sepNavSelRange = "{7249, 0}";
-			sepNavVisRange = "{5972, 1361}";
+			sepNavIntBoundsRect = "{{0, 0}, {1510, 3458}}";
+			sepNavSelRange = "{6151, 212}";
+			sepNavVisRange = "{5773, 1029}";
 			sepNavWindowFrame = "{{58, 315}, {750, 558}}";
 		};
 	};

@@ -17,9 +17,16 @@
 @interface ModalBrowser : UIViewController <UIWebViewDelegate> {
 	IBOutlet UIWebView *webView;
 	id<ModalViewControllerDelegate> delegate;
+	
+	IBOutlet UIBarButtonItem *backBtn;
+	IBOutlet UIBarButtonItem *forwardBtn;
 }
 
+- (void) updateNavButtons;
 - (void) loadURL:(NSURLRequest *) request;
+
+- (IBAction) goBack:(id)selector;
+- (IBAction) goForward:(id)selector;
 
 @property (nonatomic, assign) id<ModalViewControllerDelegate> delegate;
 @property (nonatomic, assign) UIWebView *webView;
