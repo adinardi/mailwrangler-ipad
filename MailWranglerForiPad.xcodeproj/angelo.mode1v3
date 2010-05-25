@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -267,13 +265,14 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -309,12 +308,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MailWranglerForiPadAppDelegate.m</string>
+								<string>DetailViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,24 +323,27 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MailWranglerForiPadAppDelegate.m</string>
+										<string>DetailViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>17899DDF11A916D500FCCABA</string>
+										<string>17116ACF11AB92D9000CD6CD</string>
 										<key>history</key>
 										<array>
 											<string>17FA11B61197E39F006E7336</string>
 											<string>17FA11B71197E39F006E7336</string>
 											<string>17FA12541197F2A4006E7336</string>
-											<string>17F2DA7F1199268600740CCF</string>
-											<string>17F2DA8A119927E900740CCF</string>
-											<string>17F2DA971199C93600740CCF</string>
 											<string>17F2DA981199C93600740CCF</string>
 											<string>17F2DA991199C93600740CCF</string>
-											<string>17F2DA9A1199C93600740CCF</string>
-											<string>17F2DA9B1199C93600740CCF</string>
-											<string>17899DDE11A916D500FCCABA</string>
+											<string>17899E0111A9203400FCCABA</string>
+											<string>17899E0411A9203400FCCABA</string>
+											<string>17899E3B11A924CA00FCCABA</string>
+											<string>17899E4211A928D100FCCABA</string>
+											<string>17899E4911A9294800FCCABA</string>
+											<string>17899E4A11A9294800FCCABA</string>
+											<string>17899E4B11A9294800FCCABA</string>
+											<string>17116AC611AB921C000CD6CD</string>
+											<string>17899E4C11A9294800FCCABA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -351,14 +355,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1189, 559}}</string>
+								<string>{{0, 0}, {1189, 553}}</string>
 								<key>RubberWindowFrame</key>
 								<string>43 55 1397 823 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>559pt</string>
+							<string>553pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -371,14 +375,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 564}, {1189, 218}}</string>
+								<string>{{0, 558}, {1189, 224}}</string>
 								<key>RubberWindowFrame</key>
 								<string>43 55 1397 823 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>218pt</string>
+							<string>224pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -397,9 +401,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>17899DD711A9155B00FCCABA</string>
+				<string>17116ABF11AB8F33000CD6CD</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>17899DD811A9155B00FCCABA</string>
+				<string>17116AC011AB8F33000CD6CD</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -537,8 +541,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>17899DE711A916D500FCCABA</string>
-		<string>17899DE811A916D500FCCABA</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>17FA11481197B48B006E7336</string>
@@ -622,7 +624,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>17FA11481197B48B006E7336</string>
-				<string>17899DD911A9155B00FCCABA</string>
+				<string>17116AC111AB8F33000CD6CD</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -744,13 +746,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>17899DE011A916D500FCCABA</string>
+				<string>17116AC811AB921C000CD6CD</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>17899DE111A916D500FCCABA</string>
-				<string>17899DE211A916D500FCCABA</string>
-				<string>17899DE311A916D500FCCABA</string>
-				<string>17899DE411A916D500FCCABA</string>
-				<string>17899DE511A916D500FCCABA</string>
+				<string>17116AC911AB921C000CD6CD</string>
+				<string>17116ACA11AB921C000CD6CD</string>
+				<string>17116ACB11AB921C000CD6CD</string>
+				<string>17116ACC11AB921C000CD6CD</string>
+				<string>17116ACD11AB921C000CD6CD</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -912,7 +914,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>17899DE611A916D500FCCABA</string>
+				<string>17116ACE11AB921C000CD6CD</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

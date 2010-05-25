@@ -269,7 +269,6 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
@@ -278,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>31</integer>
-									<integer>30</integer>
+									<integer>25</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -327,10 +326,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>DetailViewController.h</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>6498732F11A1304C00DBF2FD</string>
 										<key>history</key>
 										<array>
 											<string>64689E77119F87AD00BC28E4</string>
@@ -355,14 +350,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1130, 586}}</string>
+								<string>{{0, 0}, {1130, 581}}</string>
 								<key>RubberWindowFrame</key>
 								<string>47 55 1393 823 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>586pt</string>
+							<string>581pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -375,14 +370,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 591}, {1130, 191}}</string>
+								<string>{{0, 586}, {1130, 196}}</string>
 								<key>RubberWindowFrame</key>
 								<string>47 55 1393 823 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>191pt</string>
+							<string>196pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -401,9 +396,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6498724F11A1013900DBF2FD</string>
+				<string>6498735611AA305500DBF2FD</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>6498725011A1013900DBF2FD</string>
+				<string>6498735711AA305500DBF2FD</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -541,11 +536,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6498728B11A10CFC00DBF2FD</string>
-		<string>6498728C11A10CFC00DBF2FD</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>64EF1846119F5B9E00511BA6</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/adinardi/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -587,8 +578,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -628,7 +617,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>64EF1846119F5B9E00511BA6</string>
-				<string>6498725111A1013900DBF2FD</string>
+				<string>6498735811AA305500DBF2FD</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -724,10 +713,10 @@
 									<key>Frame</key>
 									<string>{{534, 0}, {642, 299}}</string>
 									<key>RubberWindowFrame</key>
-									<string>160 249 1176 616 0 0 1440 878 </string>
+									<string>148 218 1176 616 0 0 1440 878 </string>
 								</dict>
 								<key>RubberWindowFrame</key>
-								<string>160 249 1176 616 0 0 1440 878 </string>
+								<string>148 218 1176 616 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugSessionModule</string>
@@ -761,11 +750,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
 			<key>WindowString</key>
-			<string>160 249 1176 616 0 0 1440 878 </string>
+			<string>148 218 1176 616 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

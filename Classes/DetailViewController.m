@@ -153,6 +153,32 @@
   NSLog(@"web view error %@", error);
 }
 
+- (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+	NSLog(@"web view should load %@, %d", request, navigationType);
+	
+	if (navigationType == UIWebViewNavigationTypeLinkClicked) {
+		ModalBrowser *modalBrowser = [[ModalBrowser alloc] initWithNibName:@"ModalBrowser" bundle:nil];
+		modalBrowser.delegate = self;
+	
+		UINavigationController *navController = [[UINavigationController alloc]
+												 initWithRootViewController:modalBrowser];
+		
+		[self presentModalViewController:navController animated:YES];
+		[modalBrowser loadURL:request];
+	
+		return NO;
+	}
+	
+	return YES;
+}
+
+- (void)didDismissModalView {
+	
+    // Dismiss the modal view controller
+    [self dismissModalViewControllerAnimated:YES];
+	
+}
+
 - (void) webViewDidStartLoad:(UIWebView *) view {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
@@ -164,8 +190,13 @@
 - (void)splitViewController: (UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController: (UIPopoverController*)pc {
     
     barButtonItem.title = @"Accounts";
-    //[toolbar setHidden:YES];
+
     NSMutableArray *items = [[toolbar items] mutableCopy];
+
+	// Remove the previous item. Apparently this gets called frequently if the 
+	// modal browser comes up and down -- and this gets inserted weirdly.
+	[items removeObjectAtIndex:0];
+
     [items insertObject:barButtonItem atIndex:0];
     [toolbar setItems:items animated:YES];
     [items release];
@@ -180,7 +211,7 @@
     [items removeObjectAtIndex:0];
     [toolbar setItems:items animated:YES];
     [items release];
-    //[toolbar setHidden:YES];
+
     self.popoverController = nil;
 }
 
@@ -255,7 +286,6 @@
 	[detailDescriptionLabel release];
     
 	[super dealloc];
-}	
-
+}
 
 @end

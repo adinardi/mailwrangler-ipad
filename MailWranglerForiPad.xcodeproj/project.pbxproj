@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17899DFE11A9202000FCCABA /* ModalBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 17899DFC11A9202000FCCABA /* ModalBrowser.m */; };
+		17899DFF11A9202000FCCABA /* ModalBrowser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17899DFD11A9202000FCCABA /* ModalBrowser.xib */; };
 		17FA119D1197E15C006E7336 /* EditAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */; };
 		17FA119E1197E15C006E7336 /* EditAccountController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17FA119C1197E15C006E7336 /* EditAccountController.xib */; };
 		1D3623260D0F684500981E51 /* MailWranglerForiPadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MailWranglerForiPadAppDelegate.m */; };
@@ -27,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17899DFB11A9202000FCCABA /* ModalBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModalBrowser.h; path = ../ModalBrowser.h; sourceTree = "<group>"; };
+		17899DFC11A9202000FCCABA /* ModalBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModalBrowser.m; path = ../ModalBrowser.m; sourceTree = "<group>"; };
+		17899DFD11A9202000FCCABA /* ModalBrowser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalBrowser.xib; sourceTree = "<group>"; };
 		17FA119A1197E15C006E7336 /* EditAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAccountController.h; sourceTree = "<group>"; };
 		17FA119B1197E15C006E7336 /* EditAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAccountController.m; sourceTree = "<group>"; };
 		17FA119C1197E15C006E7336 /* EditAccountController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = EditAccountController.xib; path = Classes/EditAccountController.xib; sourceTree = "<group>"; };
@@ -80,6 +85,8 @@
 				2804200A108E984D000629CD /* DetailViewController.m */,
 				17FA119A1197E15C006E7336 /* EditAccountController.h */,
 				17FA119B1197E15C006E7336 /* EditAccountController.m */,
+				17899DFB11A9202000FCCABA /* ModalBrowser.h */,
+				17899DFC11A9202000FCCABA /* ModalBrowser.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				2804203B108E9BAB000629CD /* DetailView.xib */,
 				8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */,
+				17899DFD11A9202000FCCABA /* ModalBrowser.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 				649872CD11A12BB700DBF2FD /* LogoLarge.png in Resources */,
 				649872CE11A12BB700DBF2FD /* LogoMedium.png in Resources */,
 				649872CF11A12BB700DBF2FD /* LogoSmall.png in Resources */,
+				17899DFF11A9202000FCCABA /* ModalBrowser.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +220,7 @@
 				2804200C108E984D000629CD /* DetailViewController.m in Sources */,
 				2819300E112F7FA900ECF9B4 /* MailWranglerForiPad.xcdatamodeld in Sources */,
 				17FA119D1197E15C006E7336 /* EditAccountController.m in Sources */,
+				17899DFE11A9202000FCCABA /* ModalBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
