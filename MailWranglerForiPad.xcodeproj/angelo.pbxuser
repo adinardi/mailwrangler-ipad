@@ -40,27 +40,7 @@
 		vrLen = 912;
 		vrLoc = 0;
 	};
-	17116B5F11ABB3FE000CD6CD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 17899DFC11A9202000FCCABA /* ModalBrowser.m */;
-		name = "ModalBrowser.m: 134";
-		rLen = 0;
-		rLoc = 3405;
-		rType = 0;
-		vrLen = 940;
-		vrLoc = 2551;
-	};
-	17116B7111ABBAFB000CD6CD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
-		name = "DetailViewController.m: 201";
-		rLen = 0;
-		rLoc = 6762;
-		rType = 0;
-		vrLen = 1424;
-		vrLoc = 5881;
-	};
-	1778FEB511ABBCB2000D7FCD /* PBXTextBookmark */ = {
+	17310D5A11ACF2E700951BAB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 201";
@@ -69,6 +49,32 @@
 		rType = 0;
 		vrLen = 1423;
 		vrLoc = 5881;
+	};
+	17310D7B11ACF58100951BAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17899DFC11A9202000FCCABA /* ModalBrowser.m */;
+		name = "ModalBrowser.m: 134";
+		rLen = 0;
+		rLoc = 3405;
+		rType = 0;
+		vrLen = 938;
+		vrLoc = 2553;
+	};
+	17310D7C11ACF58100951BAB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 649872CC11A12BB700DBF2FD /* LogoSmall.png */;
+	};
+	17310D8B11ACFB2C00951BAB /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSRequiresIPhoneOS,
+		);
+		name = "/Users/angelo/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	17899DFB11A9202000FCCABA /* ModalBrowser.h */ = {
 		uiCtxt = {
@@ -79,9 +85,9 @@
 	};
 	17899DFC11A9202000FCCABA /* ModalBrowser.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1251, 2015}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1251, 1898}}";
 			sepNavSelRange = "{3405, 0}";
-			sepNavVisRange = "{2551, 940}";
+			sepNavVisRange = "{2553, 938}";
 		};
 	};
 	17899E0111A9203400FCCABA /* PBXTextBookmark */ = {
@@ -486,17 +492,18 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 296467207;
-			PBXWorkspaceStateSaveDate = 296467207;
+			PBXPerProjectTemplateStateSaveDate = 296541995;
+			PBXWorkspaceStateSaveDate = 296541995;
 		};
 		perUserProjectItems = {
 			17116B0D11ABA96E000CD6CD /* PBXTextBookmark */ = 17116B0D11ABA96E000CD6CD /* PBXTextBookmark */;
 			17116B2611ABADB5000CD6CD /* PBXTextBookmark */ = 17116B2611ABADB5000CD6CD /* PBXTextBookmark */;
 			17116B2711ABADB5000CD6CD /* PBXTextBookmark */ = 17116B2711ABADB5000CD6CD /* PBXTextBookmark */;
 			17116B5E11ABB3FE000CD6CD /* PBXTextBookmark */ = 17116B5E11ABB3FE000CD6CD /* PBXTextBookmark */;
-			17116B5F11ABB3FE000CD6CD /* PBXTextBookmark */ = 17116B5F11ABB3FE000CD6CD /* PBXTextBookmark */;
-			17116B7111ABBAFB000CD6CD /* PBXTextBookmark */ = 17116B7111ABBAFB000CD6CD /* PBXTextBookmark */;
-			1778FEB511ABBCB2000D7FCD /* PBXTextBookmark */ = 1778FEB511ABBCB2000D7FCD /* PBXTextBookmark */;
+			17310D5A11ACF2E700951BAB /* PBXTextBookmark */ = 17310D5A11ACF2E700951BAB /* PBXTextBookmark */;
+			17310D7B11ACF58100951BAB /* PBXTextBookmark */ = 17310D7B11ACF58100951BAB /* PBXTextBookmark */;
+			17310D7C11ACF58100951BAB /* PBXBookmark */ = 17310D7C11ACF58100951BAB /* PBXBookmark */;
+			17310D8B11ACFB2C00951BAB /* PlistBookmark */ = 17310D8B11ACFB2C00951BAB /* PlistBookmark */;
 			17899E0111A9203400FCCABA /* PBXTextBookmark */ = 17899E0111A9203400FCCABA /* PBXTextBookmark */;
 			17899E0411A9203400FCCABA /* PlistBookmark */ = 17899E0411A9203400FCCABA /* PlistBookmark */;
 			17899E3B11A924CA00FCCABA /* PBXTextBookmark */ = 17899E3B11A924CA00FCCABA /* PBXTextBookmark */;
@@ -515,6 +522,11 @@
 			sepNavIntBoundsRect = "{{0, 0}, {1128, 541}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 374}";
+		};
+	};
+	8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{58, 315}, {750, 558}}";
 		};
 	};
 }
