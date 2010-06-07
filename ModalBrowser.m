@@ -32,11 +32,12 @@
 											   target:self
 											   action:@selector(dismissView:)] autorelease];
 	showingActions = NO;
-
+  NSLog(@"modal browser loaded");
 }
 
 
 - (void) loadURL:(NSURLRequest *)request {
+NSLog(@"got url");
 	[webView loadRequest:request];
 }
 

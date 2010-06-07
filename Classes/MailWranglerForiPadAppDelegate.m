@@ -36,8 +36,9 @@
 
     
 	// Add the split view controller's view to the window and display.
-	[window addSubview:splitViewController.view];
-    [window makeKeyAndVisible];
+	// [window addSubview:splitViewController.view];
+  [window addSubview:detailViewController.view];
+  [window makeKeyAndVisible];
 	
 	return YES;
 }

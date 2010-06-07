@@ -19,7 +19,7 @@
 
 @implementation DetailViewController
 
-@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel, rootViewController, currentPassword;
+@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel, rootViewController, currentPassword, accountsButton, addButton;
 
 
 #pragma mark -
@@ -155,16 +155,19 @@
 
 - (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	//NSLog(@"web view should load %@, %d", request, navigationType);
-	
+	NSLog(@"SHOULD LOAD");
 	if (navigationType == UIWebViewNavigationTypeLinkClicked) {
 		ModalBrowser *modalBrowser = [[ModalBrowser alloc] initWithNibName:@"ModalBrowser" bundle:nil];
 		modalBrowser.delegate = self;
 	
 		UINavigationController *navController = [[UINavigationController alloc]
 												 initWithRootViewController:modalBrowser];
-		
+		NSLog(@"presenting");
 		[self presentModalViewController:navController animated:YES];
 		[modalBrowser loadURL:request];
+
+    // [modalBrowser release];
+    [navController release];
 	
 		return NO;
 	}
@@ -187,33 +190,33 @@
 #pragma mark -
 #pragma mark Split view support
 
-- (void)splitViewController: (UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController: (UIPopoverController*)pc {
-    
-    barButtonItem.title = @"Accounts";
-
-    NSMutableArray *items = [[toolbar items] mutableCopy];
-
-	// Remove the previous item. Apparently this gets called frequently if the 
-	// modal browser comes up and down -- and this gets inserted weirdly.
-	if (![items containsObject:barButtonItem]) {
-		[items insertObject:barButtonItem atIndex:0];
-		[toolbar setItems:items animated:YES];
-	}
-    [items release];
-    self.popoverController = pc;
-}
-
-
-// Called when the view is shown again in the split view, invalidating the button and popover controller.
-- (void)splitViewController: (UISplitViewController*)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
-    
-    NSMutableArray *items = [[toolbar items] mutableCopy];
-    [items removeObjectAtIndex:0];
-    [toolbar setItems:items animated:YES];
-    [items release];
-
-    self.popoverController = nil;
-}
+//- (void)splitViewController: (UISplitViewController*)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem*)barButtonItem forPopoverController: (UIPopoverController*)pc {
+//    
+//    barButtonItem.title = @"Accounts";
+//
+//    NSMutableArray *items = [[toolbar items] mutableCopy];
+//
+//	// Remove the previous item. Apparently this gets called frequently if the 
+//	// modal browser comes up and down -- and this gets inserted weirdly.
+//	if (![items containsObject:barButtonItem]) {
+//		[items insertObject:barButtonItem atIndex:0];
+//		[toolbar setItems:items animated:YES];
+//	}
+//    [items release];
+//    self.popoverController = pc;
+//}
+//
+//
+//// Called when the view is shown again in the split view, invalidating the button and popover controller.
+//- (void)splitViewController: (UISplitViewController*)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
+//    
+//    NSMutableArray *items = [[toolbar items] mutableCopy];
+//    [items removeObjectAtIndex:0];
+//    [toolbar setItems:items animated:YES];
+//    [items release];
+//
+//    self.popoverController = nil;
+//}
 
 
 #pragma mark -
@@ -286,6 +289,20 @@
 	[detailDescriptionLabel release];
     
 	[super dealloc];
+}
+
+- (void) clickAccountsButton:(id)sender {
+  if (!accountsPopover) {
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    accountsPopover = [[UIPopoverController alloc] initWithContentViewController:nav];
+    [nav release];
+  }
+  
+  [accountsPopover presentPopoverFromBarButtonItem:accountsButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+- (void) hidePopover {
+  [accountsPopover dismissPopoverAnimated:YES];
 }
 
 @end

@@ -296,7 +296,8 @@
     
     // Set the detail item in the detail view controller.
     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    detailViewController.detailItem = selectedObject;    
+    detailViewController.detailItem = selectedObject;
+    [detailViewController hidePopover];
 }
 
 - (void)tableView:(UITableView *)aTableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
