@@ -165,14 +165,12 @@
 
 - (BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 	//NSLog(@"web view should load %@, %d", request, navigationType);
-	NSLog(@"SHOULD LOAD");
 	if (navigationType == UIWebViewNavigationTypeLinkClicked) {
 		ModalBrowser *modalBrowser = [[ModalBrowser alloc] initWithNibName:@"ModalBrowser" bundle:nil];
 		modalBrowser.delegate = self;
 	
 		UINavigationController *navController = [[UINavigationController alloc]
 												 initWithRootViewController:modalBrowser];
-		NSLog(@"presenting");
 		[self presentModalViewController:navController animated:YES];
 		[modalBrowser loadURL:request];
 

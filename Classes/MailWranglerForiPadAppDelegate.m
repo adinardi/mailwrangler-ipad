@@ -41,6 +41,7 @@
 	// Add the split view controller's view to the window and display.
 	// [window addSubview:splitViewController.view];
   [window addSubview:detailViewController.view];
+  detailViewController.view.frame = [[UIScreen mainScreen] applicationFrame];
   [window makeKeyAndVisible];
 	
 	return YES;
