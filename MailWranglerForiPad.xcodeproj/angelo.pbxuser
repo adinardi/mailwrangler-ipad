@@ -74,7 +74,7 @@
 		);
 		name = "/Users/angelo/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	17899DFB11A9202000FCCABA /* ModalBrowser.h */ = {
 		uiCtxt = {
@@ -100,17 +100,6 @@
 		vrLen = 1281;
 		vrLoc = 424;
 	};
-	17899E0411A9203400FCCABA /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/angelo/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
 	17899E3B11A924CA00FCCABA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 17FA119A1197E15C006E7336 /* EditAccountController.h */;
@@ -120,6 +109,18 @@
 		rType = 0;
 		vrLen = 994;
 		vrLoc = 0;
+	};
+	17EEB26611B6EDAA0071634B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleExecutable,
+		);
+		name = "/Users/angelo/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	17F2DA981199C93600740CCF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -141,7 +142,7 @@
 		vrLen = 1203;
 		vrLoc = 0;
 	};
-	17FA11391197B484006E7336 /* MailWranglerForiPad */ = {
+	17FA11391197B484006E7336 /* MailWrangler */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -164,7 +165,7 @@
 		executableSystemSymbolLevel = 0;
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
-		name = MailWranglerForiPad;
+		name = MailWrangler;
 		savedGlobals = {
 		};
 		showTypeColumn = 0;
@@ -257,10 +258,10 @@
 			sepNavVisRange = "{424, 1281}";
 		};
 	};
-	1D6058900D05DD3D006BFB54 /* MailWranglerForiPad */ = {
+	1D6058900D05DD3D006BFB54 /* MailWrangler */ = {
 		activeExec = 0;
 		executables = (
-			17FA11391197B484006E7336 /* MailWranglerForiPad */,
+			17FA11391197B484006E7336 /* MailWrangler */,
 		);
 	};
 	28042007108E984D000629CD /* RootViewController.h */ = {
@@ -459,17 +460,31 @@
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Distribution;
-		activeExecutable = 17FA11391197B484006E7336 /* MailWranglerForiPad */;
+		activeExecutable = 17FA11391197B484006E7336 /* MailWrangler */;
 		activeSDKPreference = iphoneos3.2;
-		activeTarget = 1D6058900D05DD3D006BFB54 /* MailWranglerForiPad */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* MailWrangler */;
 		addToTargets = (
-			1D6058900D05DD3D006BFB54 /* MailWranglerForiPad */,
+			1D6058900D05DD3D006BFB54 /* MailWrangler */,
 		);
 		codeSenseManager = 17FA114B1197B48B006E7336 /* Code sense */;
 		executables = (
-			17FA11391197B484006E7336 /* MailWranglerForiPad */,
+			17FA11391197B484006E7336 /* MailWrangler */,
 		);
 		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					838,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -492,8 +507,30 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 296541995;
-			PBXWorkspaceStateSaveDate = 296541995;
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					910,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 297200007;
+			PBXWorkspaceStateSaveDate = 297200007;
 		};
 		perUserProjectItems = {
 			17116B0D11ABA96E000CD6CD /* PBXTextBookmark */ = 17116B0D11ABA96E000CD6CD /* PBXTextBookmark */;
@@ -505,8 +542,8 @@
 			17310D7C11ACF58100951BAB /* PBXBookmark */ = 17310D7C11ACF58100951BAB /* PBXBookmark */;
 			17310D8B11ACFB2C00951BAB /* PlistBookmark */ = 17310D8B11ACFB2C00951BAB /* PlistBookmark */;
 			17899E0111A9203400FCCABA /* PBXTextBookmark */ = 17899E0111A9203400FCCABA /* PBXTextBookmark */;
-			17899E0411A9203400FCCABA /* PlistBookmark */ = 17899E0411A9203400FCCABA /* PlistBookmark */;
 			17899E3B11A924CA00FCCABA /* PBXTextBookmark */ = 17899E3B11A924CA00FCCABA /* PBXTextBookmark */;
+			17EEB26611B6EDAA0071634B /* PlistBookmark */ = 17EEB26611B6EDAA0071634B /* PlistBookmark */;
 			17F2DA981199C93600740CCF /* PBXTextBookmark */ = 17F2DA981199C93600740CCF /* PBXTextBookmark */;
 			17F2DA991199C93600740CCF /* PBXTextBookmark */ = 17F2DA991199C93600740CCF /* PBXTextBookmark */;
 			17FA11B61197E39F006E7336 /* PBXTextBookmark */ = 17FA11B61197E39F006E7336 /* PBXTextBookmark */;
