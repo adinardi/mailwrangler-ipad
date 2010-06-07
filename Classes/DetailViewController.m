@@ -19,7 +19,7 @@
 
 @implementation DetailViewController
 
-@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel, rootViewController, currentPassword, accountsButton, addButton;
+@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel, rootViewController, currentPassword, accountsButton, addButton, navItem, navBar;
 
 
 #pragma mark -
@@ -86,6 +86,8 @@
 		NSString *domainString = [NSString stringWithFormat:@"https://mail.google.com/a/%@/?logout", domain];
 		url = [NSURL URLWithString:domainString];
 	}
+  
+  self.navBar.topItem.title = [detailItem valueForKey:@"desc"];
 		 
 //	NSArray *cookies = [storage cookiesForURL:url];
 //	NSEnumerator *enumerator = [cookies objectEnumerator];
@@ -235,12 +237,12 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-/*
+
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navBar.topItem.title = @"";
 }
- */
 
 /*
 - (void)viewWillAppear:(BOOL)animated {

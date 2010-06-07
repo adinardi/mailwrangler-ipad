@@ -275,7 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>6</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DetailViewController.m</string>
+								<string>DetailViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DetailViewController.m</string>
+										<string>DetailViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>64AF88F211BCB6D90008DD1D</string>
+										<string>64AF897011BCC4EA0008DD1D</string>
 										<key>history</key>
 										<array>
 											<string>6498726A11A10BAB00DBF2FD</string>
@@ -339,15 +339,15 @@
 											<string>649872F911A12E0700DBF2FD</string>
 											<string>649872FA11A12E0700DBF2FD</string>
 											<string>6498731811A12FBC00DBF2FD</string>
-											<string>64AF887411BCA9820008DD1D</string>
-											<string>64AF887911BCAAD20008DD1D</string>
 											<string>64AF88AB11BCAFE80008DD1D</string>
-											<string>64AF88BF11BCB3690008DD1D</string>
-											<string>64AF88C011BCB3690008DD1D</string>
-											<string>64AF88CB11BCB4820008DD1D</string>
-											<string>64AF88E511BCB6730008DD1D</string>
-											<string>64AF88E611BCB6730008DD1D</string>
-											<string>64AF88E711BCB6730008DD1D</string>
+											<string>64AF88FF11BCBC5F0008DD1D</string>
+											<string>64AF893711BCC0120008DD1D</string>
+											<string>64AF893811BCC0120008DD1D</string>
+											<string>64AF894511BCC1970008DD1D</string>
+											<string>64AF894C11BCC2AB0008DD1D</string>
+											<string>64AF895111BCC3F20008DD1D</string>
+											<string>64AF896E11BCC4EA0008DD1D</string>
+											<string>64AF896F11BCC4EA0008DD1D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -545,9 +545,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
+		<string>64AF892611BCBDC30008DD1D</string>
+		<string>64AF892711BCBDC30008DD1D</string>
 		<string>64EF1846119F5B9E00511BA6</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/adinardi/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -765,7 +767,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

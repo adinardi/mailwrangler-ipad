@@ -28,6 +28,10 @@
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
+											   initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+											   target:self
+											   action:@selector(insertNewObject:)] autorelease];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 	
     [super viewDidLoad];

@@ -22,18 +22,18 @@
     UIWebView *webView;
     UIBarButtonItem *accountsButton;
     UIBarButtonItem *addButton;
+    UINavigationBar *navBar;
 
     RootViewController *rootViewController;
     NSString *currentPassword;
     bool hasLoggedIn;
     UIPopoverController *accountsPopover;
-    //NSString *content;
-    //NSString *fakeUrl;
 }
 
 @property (nonatomic, retain) NSString *currentPassword;
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
 
+@property (nonatomic, retain) IBOutlet UINavigationBar *navBar;
 @property (nonatomic, retain) NSManagedObject *detailItem;
 @property (nonatomic, retain) IBOutlet UILabel *detailDescriptionLabel;
 @property (nonatomic, retain) IBOutlet UIWebView *webView;

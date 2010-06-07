@@ -28,6 +28,7 @@
 		649872CD11A12BB700DBF2FD /* LogoLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 649872CA11A12BB700DBF2FD /* LogoLarge.png */; };
 		649872CE11A12BB700DBF2FD /* LogoMedium.png in Resources */ = {isa = PBXBuildFile; fileRef = 649872CB11A12BB700DBF2FD /* LogoMedium.png */; };
 		649872CF11A12BB700DBF2FD /* LogoSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 649872CC11A12BB700DBF2FD /* LogoSmall.png */; };
+		64AF88FB11BCBB090008DD1D /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64AF88FA11BCBB090008DD1D /* RootView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		649872CA11A12BB700DBF2FD /* LogoLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoLarge.png; sourceTree = "<group>"; };
 		649872CB11A12BB700DBF2FD /* LogoMedium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoMedium.png; sourceTree = "<group>"; };
 		649872CC11A12BB700DBF2FD /* LogoSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoSmall.png; sourceTree = "<group>"; };
+		64AF88FA11BCBB090008DD1D /* RootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MailWranglerForiPad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 				2804203B108E9BAB000629CD /* DetailView.xib */,
 				8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */,
 				17899DFD11A9202000FCCABA /* ModalBrowser.xib */,
+				64AF88FA11BCBB090008DD1D /* RootView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				17899DFF11A9202000FCCABA /* ModalBrowser.xib in Resources */,
 				17116AF611ABA1DF000CD6CD /* backBtn.png in Resources */,
 				17116AF811ABA1DF000CD6CD /* forwardBtn.png in Resources */,
+				64AF88FB11BCBB090008DD1D /* RootView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

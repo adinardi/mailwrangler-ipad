@@ -30,9 +30,12 @@
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+    self.rootViewController = [[[RootViewController alloc] init] autorelease];
+    rootViewController.detailViewController = detailViewController;
+
     // Override point for customization after app launch    
     rootViewController.managedObjectContext = self.managedObjectContext;
+    detailViewController.rootViewController = rootViewController;
 
     
 	// Add the split view controller's view to the window and display.
