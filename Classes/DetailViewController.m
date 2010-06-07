@@ -19,7 +19,15 @@
 
 @implementation DetailViewController
 
-@synthesize toolbar, popoverController, detailItem, detailDescriptionLabel, rootViewController, currentPassword, accountsButton, addButton, navItem, navBar;
+@synthesize toolbar,
+            popoverController,
+            detailItem,
+            detailDescriptionLabel,
+            rootViewController,
+            currentPassword,
+            accountsButton,
+            addButton,
+            navBar;
 
 
 #pragma mark -

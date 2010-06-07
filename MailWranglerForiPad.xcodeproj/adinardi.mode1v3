@@ -275,7 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
+									<integer>9</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -300,7 +300,7 @@
 							<real>241</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>47 55 1393 823 0 0 1440 878 </string>
+						<string>46 55 1393 823 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DetailViewController.h</string>
+								<string>EditAccountController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,28 +326,28 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DetailViewController.h</string>
+										<string>EditAccountController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>64AF897011BCC4EA0008DD1D</string>
+										<string>64AF898A11BCC8800008DD1D</string>
 										<key>history</key>
 										<array>
 											<string>6498726A11A10BAB00DBF2FD</string>
 											<string>6498729011A10FA800DBF2FD</string>
-											<string>649872F811A12E0700DBF2FD</string>
 											<string>649872F911A12E0700DBF2FD</string>
 											<string>649872FA11A12E0700DBF2FD</string>
 											<string>6498731811A12FBC00DBF2FD</string>
 											<string>64AF88AB11BCAFE80008DD1D</string>
 											<string>64AF88FF11BCBC5F0008DD1D</string>
 											<string>64AF893711BCC0120008DD1D</string>
-											<string>64AF893811BCC0120008DD1D</string>
 											<string>64AF894511BCC1970008DD1D</string>
 											<string>64AF894C11BCC2AB0008DD1D</string>
-											<string>64AF895111BCC3F20008DD1D</string>
-											<string>64AF896E11BCC4EA0008DD1D</string>
-											<string>64AF896F11BCC4EA0008DD1D</string>
+											<string>64AF897811BCC7340008DD1D</string>
+											<string>64AF897911BCC7340008DD1D</string>
+											<string>64AF897A11BCC7340008DD1D</string>
+											<string>64AF898511BCC8390008DD1D</string>
+											<string>64AF898611BCC8390008DD1D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -361,7 +361,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1130, 576}}</string>
 								<key>RubberWindowFrame</key>
-								<string>47 55 1393 823 0 0 1440 878 </string>
+								<string>46 55 1393 823 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -381,7 +381,7 @@
 								<key>Frame</key>
 								<string>{{0, 581}, {1130, 201}}</string>
 								<key>RubberWindowFrame</key>
-								<string>47 55 1393 823 0 0 1440 878 </string>
+								<string>46 55 1393 823 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -553,7 +553,7 @@
 		<string>/Users/adinardi/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>47 55 1393 823 0 0 1440 878 </string>
+	<string>46 55 1393 823 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -574,7 +574,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>MailWranglerForiPadAppDelegate.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -591,6 +591,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

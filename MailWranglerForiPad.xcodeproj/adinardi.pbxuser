@@ -23,9 +23,9 @@
 	};
 	17FA119B1197E15C006E7336 /* EditAccountController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 1808}}";
-			sepNavSelRange = "{2722, 0}";
-			sepNavVisRange = "{1865, 1058}";
+			sepNavIntBoundsRect = "{{0, 0}, {1447, 1808}}";
+			sepNavSelRange = "{2131, 0}";
+			sepNavVisRange = "{1753, 1304}";
 			sepNavWindowFrame = "{{62, 0}, {1085, 878}}";
 		};
 	};
@@ -38,9 +38,9 @@
 	};
 	1D3623250D0F684500981E51 /* MailWranglerForiPadAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2329, 2688}}";
-			sepNavSelRange = "{1036, 0}";
-			sepNavVisRange = "{792, 1172}";
+			sepNavIntBoundsRect = "{{0, 0}, {2329, 2784}}";
+			sepNavSelRange = "{5759, 0}";
+			sepNavVisRange = "{0, 844}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* MailWrangler */ = {
@@ -58,24 +58,24 @@
 	};
 	28042008108E984D000629CD /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2343, 7408}}";
-			sepNavSelRange = "{866, 0}";
-			sepNavVisRange = "{542, 1254}";
+			sepNavIntBoundsRect = "{{0, 0}, {2329, 7504}}";
+			sepNavSelRange = "{13713, 0}";
+			sepNavVisRange = "{12808, 1132}";
 			sepNavWindowFrame = "{{62, 0}, {1085, 878}}";
 		};
 	};
 	28042009108E984D000629CD /* DetailViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1139, 832}}";
-			sepNavSelRange = "{842, 0}";
-			sepNavVisRange = "{543, 1043}";
+			sepNavSelRange = "{795, 0}";
+			sepNavVisRange = "{437, 1121}";
 		};
 	};
 	2804200A108E984D000629CD /* DetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1104, 5056}}";
-			sepNavSelRange = "{2482, 0}";
-			sepNavVisRange = "{1702, 1065}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 5232}}";
+			sepNavSelRange = "{637, 0}";
+			sepNavVisRange = "{157, 628}";
 		};
 	};
 	280420B3108E9F58000629CD /* MailWranglerForiPad.xcdatamodel */ = {
@@ -474,6 +474,18 @@
 			64AF896E11BCC4EA0008DD1D /* PBXTextBookmark */ = 64AF896E11BCC4EA0008DD1D /* PBXTextBookmark */;
 			64AF896F11BCC4EA0008DD1D /* PBXTextBookmark */ = 64AF896F11BCC4EA0008DD1D /* PBXTextBookmark */;
 			64AF897011BCC4EA0008DD1D /* PBXTextBookmark */ = 64AF897011BCC4EA0008DD1D /* PBXTextBookmark */;
+			64AF897211BCC5300008DD1D /* XCBuildMessageTextBookmark */ = 64AF897211BCC5300008DD1D /* XCBuildMessageTextBookmark */;
+			64AF897311BCC5300008DD1D /* PBXTextBookmark */ = 64AF897311BCC5300008DD1D /* PBXTextBookmark */;
+			64AF897811BCC7340008DD1D /* PBXTextBookmark */ = 64AF897811BCC7340008DD1D /* PBXTextBookmark */;
+			64AF897911BCC7340008DD1D /* PBXTextBookmark */ = 64AF897911BCC7340008DD1D /* PBXTextBookmark */;
+			64AF897A11BCC7340008DD1D /* PBXTextBookmark */ = 64AF897A11BCC7340008DD1D /* PBXTextBookmark */;
+			64AF897B11BCC7340008DD1D /* PBXTextBookmark */ = 64AF897B11BCC7340008DD1D /* PBXTextBookmark */;
+			64AF897C11BCC7340008DD1D /* PBXTextBookmark */ = 64AF897C11BCC7340008DD1D /* PBXTextBookmark */;
+			64AF897D11BCC7340008DD1D /* PBXTextBookmark */ = 64AF897D11BCC7340008DD1D /* PBXTextBookmark */;
+			64AF898511BCC8390008DD1D /* PBXTextBookmark */ = 64AF898511BCC8390008DD1D /* PBXTextBookmark */;
+			64AF898611BCC8390008DD1D /* PBXTextBookmark */ = 64AF898611BCC8390008DD1D /* PBXTextBookmark */;
+			64AF898711BCC8390008DD1D /* PBXTextBookmark */ = 64AF898711BCC8390008DD1D /* PBXTextBookmark */;
+			64AF898A11BCC8800008DD1D /* PBXTextBookmark */ = 64AF898A11BCC8800008DD1D /* PBXTextBookmark */;
 		};
 		sourceControlManager = 64EF183D119F5A4D00511BA6 /* Source Control */;
 		userBuildSettings = {
@@ -506,7 +518,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 262";
 		rLen = 0;
-		rLoc = 8142;
+		rLoc = 8229;
 		rType = 0;
 		vrLen = 1693;
 		vrLoc = 3019;
@@ -604,7 +616,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 73";
 		rLen = 0;
-		rLoc = 1956;
+		rLoc = 2434;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1693;
@@ -659,7 +671,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 73";
 		rLen = 0;
-		rLoc = 1956;
+		rLoc = 2434;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 1692;
@@ -694,7 +706,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 103";
 		rLen = 10;
-		rLoc = 3012;
+		rLoc = 3099;
 		rType = 0;
 		vrLen = 1556;
 		vrLoc = 2367;
@@ -789,7 +801,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 75";
 		rLen = 0;
-		rLoc = 1990;
+		rLoc = 2468;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 1592;
@@ -799,7 +811,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 75";
 		rLen = 0;
-		rLoc = 1990;
+		rLoc = 2468;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 1592;
@@ -809,7 +821,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 96";
 		rLen = 0;
-		rLoc = 2722;
+		rLoc = 3282;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1898;
@@ -819,7 +831,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 96";
 		rLen = 0;
-		rLoc = 2722;
+		rLoc = 3282;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 2075;
@@ -829,7 +841,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 96";
 		rLen = 0;
-		rLoc = 2722;
+		rLoc = 3282;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 1957;
@@ -839,7 +851,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 96";
 		rLen = 0;
-		rLoc = 2722;
+		rLoc = 3282;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 1957;
@@ -849,7 +861,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 96";
 		rLen = 0;
-		rLoc = 2722;
+		rLoc = 3282;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 1957;
@@ -859,7 +871,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 96";
 		rLen = 0;
-		rLoc = 2722;
+		rLoc = 3282;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 1957;
@@ -869,7 +881,7 @@
 		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
 		name = "EditAccountController.m: 96";
 		rLen = 0;
-		rLoc = 2722;
+		rLoc = 3282;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 1957;
@@ -967,7 +979,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 103";
 		rLen = 10;
-		rLoc = 3012;
+		rLoc = 3099;
 		rType = 0;
 		vrLen = 1556;
 		vrLoc = 2367;
@@ -1077,7 +1089,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 103";
 		rLen = 10;
-		rLoc = 3012;
+		rLoc = 3099;
 		rType = 0;
 		vrLen = 1556;
 		vrLoc = 2367;
@@ -1147,7 +1159,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 22";
 		rLen = 0;
-		rLoc = 533;
+		rLoc = 617;
 		rType = 0;
 		vrLen = 692;
 		vrLoc = 0;
@@ -1157,7 +1169,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 22";
 		rLen = 0;
-		rLoc = 556;
+		rLoc = 643;
 		rType = 0;
 		vrLen = 698;
 		vrLoc = 0;
@@ -1197,7 +1209,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 292";
 		rLen = 34;
-		rLoc = 9372;
+		rLoc = 9459;
 		rType = 0;
 		vrLen = 651;
 		vrLoc = 8401;
@@ -1207,7 +1219,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 293";
 		rLen = 0;
-		rLoc = 9536;
+		rLoc = 9623;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 8401;
@@ -1217,7 +1229,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 292";
 		rLen = 0;
-		rLoc = 9375;
+		rLoc = 9462;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 8401;
@@ -1237,7 +1249,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 292";
 		rLen = 0;
-		rLoc = 9375;
+		rLoc = 9462;
 		rType = 0;
 		vrLen = 749;
 		vrLoc = 8401;
@@ -1247,7 +1259,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 28";
 		rLen = 0;
-		rLoc = 646;
+		rLoc = 733;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 225;
@@ -1287,7 +1299,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 28";
 		rLen = 0;
-		rLoc = 646;
+		rLoc = 733;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 225;
@@ -1297,7 +1309,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 293";
 		rLen = 0;
-		rLoc = 9375;
+		rLoc = 9462;
 		rType = 0;
 		vrLen = 801;
 		vrLoc = 8451;
@@ -1327,7 +1339,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 158";
 		rLen = 0;
-		rLoc = 5522;
+		rLoc = 5609;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 4785;
@@ -1337,7 +1349,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 299";
 		rLen = 0;
-		rLoc = 9612;
+		rLoc = 9699;
 		rType = 0;
 		vrLen = 797;
 		vrLoc = 8480;
@@ -1347,7 +1359,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 298";
 		rLen = 0;
-		rLoc = 9536;
+		rLoc = 9623;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 8480;
@@ -1367,7 +1379,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 298";
 		rLen = 0;
-		rLoc = 9536;
+		rLoc = 9623;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 8480;
@@ -1377,7 +1389,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 296";
 		rLen = 0;
-		rLoc = 9382;
+		rLoc = 9469;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 8511;
@@ -1427,7 +1439,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 296";
 		rLen = 0;
-		rLoc = 9382;
+		rLoc = 9469;
 		rType = 0;
 		vrLen = 837;
 		vrLoc = 8464;
@@ -1437,7 +1449,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 303";
 		rLen = 0;
-		rLoc = 9610;
+		rLoc = 9697;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 8512;
@@ -1457,7 +1469,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 303";
 		rLen = 0;
-		rLoc = 9610;
+		rLoc = 9697;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 8512;
@@ -1467,7 +1479,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 168";
 		rLen = 0;
-		rLoc = 5967;
+		rLoc = 6054;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 5081;
@@ -1477,7 +1489,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 168";
 		rLen = 0;
-		rLoc = 5967;
+		rLoc = 6054;
 		rType = 0;
 		vrLen = 1032;
 		vrLoc = 5081;
@@ -1517,7 +1529,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 168";
 		rLen = 0;
-		rLoc = 5967;
+		rLoc = 6054;
 		rType = 0;
 		vrLen = 954;
 		vrLoc = 5159;
@@ -1527,7 +1539,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 165";
 		rLen = 0;
-		rLoc = 5868;
+		rLoc = 5955;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 5159;
@@ -1537,7 +1549,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 165";
 		rLen = 0;
-		rLoc = 5868;
+		rLoc = 5955;
 		rType = 0;
 		vrLen = 997;
 		vrLoc = 5159;
@@ -1587,7 +1599,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 166";
 		rLen = 0;
-		rLoc = 5932;
+		rLoc = 6019;
 		rType = 0;
 		vrLen = 1026;
 		vrLoc = 5080;
@@ -1597,7 +1609,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 166";
 		rLen = 0;
-		rLoc = 5930;
+		rLoc = 6017;
 		rType = 0;
 		vrLen = 1024;
 		vrLoc = 5081;
@@ -1607,7 +1619,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 170";
 		rLen = 0;
-		rLoc = 6027;
+		rLoc = 6114;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 5081;
@@ -1617,7 +1629,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 170";
 		rLen = 0;
-		rLoc = 6003;
+		rLoc = 6090;
 		rType = 0;
 		vrLen = 1030;
 		vrLoc = 5081;
@@ -1670,7 +1682,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 231";
 		rLen = 128;
-		rLoc = 7863;
+		rLoc = 7950;
 		rType = 0;
 		vrLen = 1297;
 		vrLoc = 6240;
@@ -1700,7 +1712,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 231";
 		rLen = 128;
-		rLoc = 7863;
+		rLoc = 7950;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 98;
@@ -1910,7 +1922,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 90";
 		rLen = 0;
-		rLoc = 2482;
+		rLoc = 2569;
 		rType = 0;
 		vrLen = 1213;
 		vrLoc = 1797;
@@ -1920,7 +1932,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 90";
 		rLen = 0;
-		rLoc = 2524;
+		rLoc = 2611;
 		rType = 0;
 		vrLen = 1151;
 		vrLoc = 1795;
@@ -1950,7 +1962,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 242";
 		rLen = 19;
-		rLoc = 8138;
+		rLoc = 8225;
 		rType = 0;
 		vrLen = 660;
 		vrLoc = 7981;
@@ -1960,7 +1972,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 90";
 		rLen = 0;
-		rLoc = 2482;
+		rLoc = 2569;
 		rType = 0;
 		vrLen = 977;
 		vrLoc = 1637;
@@ -1980,7 +1992,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 90";
 		rLen = 0;
-		rLoc = 2482;
+		rLoc = 2569;
 		rType = 0;
 		vrLen = 991;
 		vrLoc = 1637;
@@ -1990,7 +2002,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 244";
 		rLen = 0;
-		rLoc = 8189;
+		rLoc = 8276;
 		rType = 0;
 		vrLen = 918;
 		vrLoc = 7551;
@@ -2000,7 +2012,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 22";
 		rLen = 0;
-		rLoc = 556;
+		rLoc = 643;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 160;
@@ -2010,7 +2022,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 22";
 		rLen = 0;
-		rLoc = 556;
+		rLoc = 643;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 160;
@@ -2020,7 +2032,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 90";
 		rLen = 0;
-		rLoc = 2482;
+		rLoc = 2569;
 		rType = 0;
 		vrLen = 1065;
 		vrLoc = 1702;
@@ -2030,7 +2042,7 @@
 		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
 		name = "DetailViewController.m: 90";
 		rLen = 0;
-		rLoc = 2482;
+		rLoc = 2569;
 		rType = 0;
 		vrLen = 1065;
 		vrLoc = 1702;
@@ -2054,6 +2066,125 @@
 		rType = 0;
 		vrLen = 1043;
 		vrLoc = 543;
+	};
+	64AF897211BCC5300008DD1D /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Property 'editAccountController' requires method '-editAccountController' to be defined - use @synthesize, @dynamic or provide a method implementation";
+		fRef = 1D3623250D0F684500981E51 /* MailWranglerForiPadAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 172;
+		rType = 1;
+	};
+	64AF897311BCC5300008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MailWranglerForiPadAppDelegate.m */;
+		name = "MailWranglerForiPadAppDelegate.m: 173";
+		rLen = 0;
+		rLoc = 5759;
+		rType = 0;
+		vrLen = 103;
+		vrLoc = 5662;
+	};
+	64AF897811BCC7340008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* MailWranglerForiPadAppDelegate.m */;
+		name = "MailWranglerForiPadAppDelegate.m: 173";
+		rLen = 0;
+		rLoc = 5759;
+		rType = 0;
+		vrLen = 844;
+		vrLoc = 0;
+	};
+	64AF897911BCC7340008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042009108E984D000629CD /* DetailViewController.h */;
+		name = "DetailViewController.h: 29";
+		rLen = 0;
+		rLoc = 795;
+		rType = 0;
+		vrLen = 1121;
+		vrLoc = 437;
+	};
+	64AF897A11BCC7340008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
+		name = "DetailViewController.m: 30";
+		rLen = 0;
+		rLoc = 637;
+		rType = 0;
+		vrLen = 628;
+		vrLoc = 157;
+	};
+	64AF897B11BCC7340008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
+		name = "EditAccountController.m: 82";
+		rLen = 0;
+		rLoc = 2784;
+		rType = 0;
+		vrLen = 1006;
+		vrLoc = 2016;
+	};
+	64AF897C11BCC7340008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042008108E984D000629CD /* RootViewController.m */;
+		name = "RootViewController.m: 330";
+		rLen = 0;
+		rLoc = 13315;
+		rType = 0;
+		vrLen = 1218;
+		vrLoc = 12299;
+	};
+	64AF897D11BCC7340008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042008108E984D000629CD /* RootViewController.m */;
+		name = "RootViewController.m: 341";
+		rLen = 0;
+		rLoc = 13713;
+		rType = 0;
+		vrLen = 1041;
+		vrLoc = 13065;
+	};
+	64AF898511BCC8390008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042008108E984D000629CD /* RootViewController.m */;
+		name = "RootViewController.m: 341";
+		rLen = 0;
+		rLoc = 13713;
+		rType = 0;
+		vrLen = 1132;
+		vrLoc = 12808;
+	};
+	64AF898611BCC8390008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
+		name = "EditAccountController.m: 82";
+		rLen = 0;
+		rLoc = 2784;
+		rType = 0;
+		vrLen = 1065;
+		vrLoc = 1957;
+	};
+	64AF898711BCC8390008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
+		name = "EditAccountController.m: 75";
+		rLen = 0;
+		rLoc = 2135;
+		rType = 0;
+		vrLen = 1176;
+		vrLoc = 1753;
+	};
+	64AF898A11BCC8800008DD1D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17FA119B1197E15C006E7336 /* EditAccountController.m */;
+		name = "EditAccountController.m: 77";
+		rLen = 0;
+		rLoc = 2131;
+		rType = 0;
+		vrLen = 1304;
+		vrLoc = 1753;
 	};
 	64EF1825119F5A0D00511BA6 /* MailWranglerForiPad */ = {
 		isa = PBXExecutable;

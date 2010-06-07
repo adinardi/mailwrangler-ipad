@@ -319,8 +319,26 @@
 	//NSLog(@"frc %@", [self fetchedResultsController]);
 	//[acct setFetchedResultsController:[self fetchedResultsController]];
 	[self.view addSubview:acct.view];
+  
+  self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
+											   initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+											   target:acct
+											   action:@selector(hitSave:)] autorelease];
+  self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc]
+                        initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                        target:acct
+                        action:@selector(hitCancel:)] autorelease];
+  
 	//[self presentModalViewController:acct animated:YES];
 	[acct release];
+}
+
+- (void) doneEditing {
+      self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
+											   initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+											   target:self
+											   action:@selector(insertNewObject:)] autorelease];
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 

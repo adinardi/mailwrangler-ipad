@@ -71,6 +71,15 @@
 }
 
 - (void) hitSave:(id)selector {
+  if ([descriptionField.text compare:@""] == NSOrderedSame ||
+      [usernameField.text compare:@""] == NSOrderedSame ||
+      [passwordField.text compare:@""] == NSOrderedSame ||
+      [domainField.text compare:@""] == NSOrderedSame) {
+    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Incomplete" message:@"Please complete all fields to add an account." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+    [alert show];
+    return;
+  }
+
   [account setValue:descriptionField.text forKey:@"desc"];
 	[account setValue:usernameField.text forKey:@"username"];
 	[account setValue:passwordField.text forKey:@"password"];
@@ -79,6 +88,7 @@
   [rootViewController storePasswordForAccount:account];
   [account setValue:@"" forKey:@"password"];
 	[self.view removeFromSuperview];
+  [self.rootViewController doneEditing];
 }
 
 - (void) hitCancel:(id)selector {
@@ -88,6 +98,7 @@
     [self.rootViewController removeAccount:account];
   }
   [self.view removeFromSuperview];
+  [self.rootViewController doneEditing];
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
