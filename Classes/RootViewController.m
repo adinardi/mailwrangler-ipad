@@ -318,6 +318,9 @@
 	acct.account = selectedObject;
 	//NSLog(@"frc %@", [self fetchedResultsController]);
 	//[acct setFetchedResultsController:[self fetchedResultsController]];
+  
+  // Make sure the account view is the right size to fill the space.
+  acct.view.frame = self.view.frame;
 	[self.view addSubview:acct.view];
   
   self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]

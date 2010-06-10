@@ -310,6 +310,7 @@
     [nav release];
   }
   
+  [accountsPopover setPopoverContentSize:CGSizeMake(320.0, 1100.0)];
   [accountsPopover presentPopoverFromBarButtonItem:accountsButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
