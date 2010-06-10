@@ -75,7 +75,7 @@
       [usernameField.text compare:@""] == NSOrderedSame ||
       [passwordField.text compare:@""] == NSOrderedSame ||
       [domainField.text compare:@""] == NSOrderedSame) {
-    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Incomplete" message:@"Please complete all fields to add an account." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Incomplete Account Information" message:@"Please complete all fields to save this account." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
     [alert show];
     return;
   }
