@@ -120,6 +120,9 @@
                   if (document.getElementById('errormsg_0_Passwd')) { \
                     return 'FAIL'; \
                   } \
+                  if (document.getElementById('errormsg_0_Email')) { \
+                    return 'FAIL'; \
+                  } \
                   if (document.getElementById('gaia_loginform')) { \
                     document.getElementById('Email').value = '%@'; \
                     document.getElementById('Passwd').value = '%@'; \
