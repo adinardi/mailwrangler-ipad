@@ -63,6 +63,10 @@ NSLog(@"got url");
 
 - (void) webViewDidFinishLoad:(UIWebView *)webView {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+  
+  // Set the title of the nav bar in the modal view to the title of the page we've loaded.
+  self.navigationItem.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+  
 	[self updateNavButtons];
 }
 
