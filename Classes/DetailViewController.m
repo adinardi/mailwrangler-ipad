@@ -49,6 +49,7 @@
   // This indicates that the account we were showing was probably deleted.
   if (managedObject == nil) {
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"about:blank"]]];
+    self.navBar.topItem.title = @"";
     return;
   }  
   
