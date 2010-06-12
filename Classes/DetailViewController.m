@@ -71,7 +71,10 @@
 			return;
 		}
 		
-        [self configureView];
+    [self configureView];
+    
+    NSLog(@"new account %@", [[detailItem objectID] URIRepresentation]);
+    [[NSUserDefaults standardUserDefaults] setObject:[[[detailItem objectID] URIRepresentation] absoluteString] forKey:@"lastOpenAccount"];
 	}
     
     if (popoverController != nil) {
@@ -304,6 +307,14 @@
 }
 
 - (void) clickAccountsButton:(id)sender {
+  if ([accountsPopover isPopoverVisible]) {
+    [self hidePopover];
+  } else {
+    [self showAccountsPopover];
+  }
+}
+
+- (void) showAccountsPopover {
   if (!accountsPopover) {
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootViewController];
     accountsPopover = [[UIPopoverController alloc] initWithContentViewController:nav];

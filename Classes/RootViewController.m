@@ -28,13 +28,10 @@
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
-    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
-											   initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-											   target:self
-											   action:@selector(insertNewObject:)] autorelease];
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-	
     [super viewDidLoad];
+    
+    [self doneEditing];
+    
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
 
@@ -331,6 +328,11 @@
                         initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                         target:acct
                         action:@selector(hitCancel:)] autorelease];
+  if (isNewAccount) {
+    self.navigationItem.title = @"Add Account";
+  } else {
+    self.navigationItem.title = @"Edit Account";
+  }
   
 	//[self presentModalViewController:acct animated:YES];
 	[acct release];
@@ -342,6 +344,7 @@
 											   target:self
 											   action:@selector(insertNewObject:)] autorelease];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    self.navigationItem.title = @"Accounts";
 }
 
 

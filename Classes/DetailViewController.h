@@ -46,6 +46,8 @@
 - (IBAction)doAddAccount:(id)sender;
 - (IBAction)clickAccountsButton:(id)sender;
 
+- (void) showAccountsPopover;
+
 - (void) hidePopover;
 
 @end

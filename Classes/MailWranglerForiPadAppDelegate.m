@@ -43,6 +43,27 @@
   [window addSubview:detailViewController.view];
   detailViewController.view.frame = [[UIScreen mainScreen] applicationFrame];
   [window makeKeyAndVisible];
+  
+  BOOL done = NO;
+  NSString *lastAccountURL = [[NSUserDefaults standardUserDefaults] stringForKey:@"lastOpenAccount"];
+  NSLog(@"account %@", lastAccountURL);
+  if (lastAccountURL != nil) {
+    NSManagedObject *defaultItem = [self.managedObjectContext existingObjectWithID:[self.persistentStoreCoordinator managedObjectIDForURIRepresentation:[NSURL URLWithString:lastAccountURL]] error:nil];
+    if (defaultItem != nil) {
+      detailViewController.detailItem = defaultItem;
+      done = YES;
+    }
+  }
+  
+  NSFetchRequest *req = [[[NSFetchRequest alloc] init] autorelease];
+  [req setEntity:[[self.managedObjectModel entitiesByName] objectForKey:@"Event"]];
+  
+  NSLog(@"count %i", [self.managedObjectContext countForFetchRequest:req error:nil]);
+  if (!done && [self.managedObjectContext countForFetchRequest:req error:nil] == 0) {
+    [detailViewController showAccountsPopover];
+    [self.rootViewController insertNewObject:self];
+  }
+  // [detailViewController showAccountsPopover];
 	
 	return YES;
 }
