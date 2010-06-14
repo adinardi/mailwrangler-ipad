@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self doneEditing];
+    [self showAccountsNavItems];
     
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
@@ -319,6 +319,7 @@
   
   // Make sure the account view is the right size to fill the space.
   acct.view.frame = self.view.frame;
+	self.tableView.scrollEnabled = NO;
 	[self.view addSubview:acct.view];
   
   self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
@@ -340,15 +341,21 @@
 }
 
 - (void) doneEditing {
-      self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
+	self.tableView.scrollEnabled = NO;
+	[self showAccountsNavItems];
+	// [self.view addSubview:self.tableView];
+
+	// I would rather just update the cell with an issue, but hey.
+	[self.tableView reloadData];
+}
+
+- (void) showAccountsNavItems {
+	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
 											   initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
 											   target:self
 											   action:@selector(insertNewObject:)] autorelease];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     self.navigationItem.title = @"Accounts";
-	
-	// I would rather just update the cell with an issue, but hey.
-	[self.tableView reloadData];
 }
 
 
