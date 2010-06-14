@@ -73,7 +73,7 @@
 		
     [self configureView];
     
-    NSLog(@"new account %@", [[detailItem objectID] URIRepresentation]);
+    // NSLog(@"new account %@", [[detailItem objectID] URIRepresentation]);
     [[NSUserDefaults standardUserDefaults] setObject:[[[detailItem objectID] URIRepresentation] absoluteString] forKey:@"lastOpenAccount"];
 	}
     

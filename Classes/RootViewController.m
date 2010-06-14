@@ -175,7 +175,7 @@
   [username appendString:@"@"];
   [username appendString:[account valueForKey:@"domain"]];
 
-  NSLog(@"Working with ID: %@", username);
+  // NSLog(@"Working with ID: %@", username);
   NSData *keychainItemID = [NSData dataWithBytes:[username UTF8String]
                             length:strlen([username UTF8String])];
   
@@ -217,7 +217,7 @@
       NSLog(@"Couldn't add the Keychain Item. %d", status);
     } else {
       //[self storePasswordForAccount:account];
-      NSLog(@"Stored data %d", status);
+      //NSLog(@"Stored data %d", status);
     }
   }
 }
