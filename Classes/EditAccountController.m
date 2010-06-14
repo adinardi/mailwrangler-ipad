@@ -61,6 +61,8 @@
 
 
 - (void)dealloc {
+	[account release];
+	[fetchedResultsController release];
     [super dealloc];
 }
 
@@ -76,6 +78,7 @@
       [domainField.text compare:@""] == NSOrderedSame) {
     UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Incomplete Account Information" message:@"Please complete all fields to save this account." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
     [alert show];
+	[alert release];
     return;
   }
 
