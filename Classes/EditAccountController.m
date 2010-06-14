@@ -23,6 +23,68 @@
 }
 */
 
+- (UITextField *) getBaseTextFieldWithPlaceholderText: (NSString *)text {
+	UITextField *field = [[UITextField alloc] initWithFrame:CGRectMake(120.0f, 12.0f, 192.0f, 22.0f)];
+	field.clearButtonMode = UITextFieldViewModeWhileEditing;
+	field.autocorrectionType = UITextAutocorrectionTypeNo;
+	field.autocapitalizationType = UITextAutocapitalizationTypeNone;
+	field.returnKeyType = UIReturnKeyNext;
+	field.textAlignment = UITextAlignmentLeft;
+	field.delegate = self;
+	field.textColor = [UIColor colorWithRed:0.22 green:0.459 blue:0.843 alpha:1.0];
+	
+	field.placeholder = text;
+	
+	return field;
+}
+
+- (UITableViewCell *) getBaseCellWithText: (NSString *)text {
+	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"account"];
+	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	cell.textLabel.text = text;
+	
+	return cell;
+}
+
+- (id)initWithStyle:(UITableViewStyle)style {
+	self = [super initWithStyle:UITableViewStyleGrouped];
+	
+	UITableViewCell *userCell = [self getBaseCellWithText:@"Username"];
+	usernameField = [self getBaseTextFieldWithPlaceholderText:@"myname"];
+	[userCell addSubview:usernameField];
+	
+	UITableViewCell *passwordCell = [self getBaseCellWithText:@"Password"];
+	passwordField = [self getBaseTextFieldWithPlaceholderText:@"xyz123"];
+	passwordField.secureTextEntry = YES;
+	[passwordCell addSubview:passwordField];
+	
+	UITableViewCell *descriptionCell = [self getBaseCellWithText:@"Description"];
+	descriptionField = [self getBaseTextFieldWithPlaceholderText:@"Work"];
+	[descriptionCell addSubview:descriptionField];
+	
+	UITableViewCell *domainCell = [self getBaseCellWithText:@"Domain"];
+	domainField = [self getBaseTextFieldWithPlaceholderText:@"gmail.com"];
+	domainField.text = @"gmail.com";
+	domainField.returnKeyType = UIReturnKeyDone;
+	[domainCell addSubview:domainField];
+	
+	cells = [[NSArray alloc] initWithObjects:descriptionCell, userCell, passwordCell, domainCell, nil];
+	
+	return self;
+}
+
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+	return 1;
+}
+
+- (NSInteger) tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
+	return 4;
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return [cells objectAtIndex:indexPath.row];
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];

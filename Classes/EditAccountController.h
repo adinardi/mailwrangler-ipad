@@ -11,14 +11,16 @@
 
 @class RootViewController;
 
-@interface EditAccountController : UIViewController <UITextFieldDelegate> {
-	NSManagedObject *account;
+@interface EditAccountController : UITableViewController <UITextFieldDelegate> {
+  NSManagedObject *account;
   bool isNewAccount;
+	
+	NSArray *cells;
   
-  IBOutlet UITextField *descriptionField;
-	IBOutlet UITextField *usernameField;
-	IBOutlet UITextField *passwordField;
-	IBOutlet UITextField *domainField;
+   UITextField *descriptionField;
+	 UITextField *usernameField;
+	 UITextField *passwordField;
+	 UITextField *domainField;
 	
 	NSFetchedResultsController *fetchedResultsController;
   RootViewController *rootViewController;

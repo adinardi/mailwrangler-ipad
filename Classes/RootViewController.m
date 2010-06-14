@@ -308,7 +308,8 @@
 }
 
 - (void) showEditAccount:(NSManagedObject *) selectedObject isNewAccount:(bool)isNewAccount {
-	EditAccountController *acct = [[[EditAccountController alloc] initWithNibName:@"EditAccountController" bundle:nil] retain];
+	// EditAccountController *acct = [[[EditAccountController alloc] initWithNibName:@"EditAccountController" bundle:nil] retain];
+	EditAccountController *acct = [[[EditAccountController alloc] init] retain];
   
   acct.isNewAccount = isNewAccount;
   acct.rootViewController = self;
