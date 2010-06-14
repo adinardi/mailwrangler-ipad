@@ -18,9 +18,9 @@
 	IBOutlet UIWebView *webView;
 	id<ModalViewControllerDelegate> delegate;
 	
-	IBOutlet UIBarButtonItem *backBtn;
-	IBOutlet UIBarButtonItem *forwardBtn;
-	IBOutlet UIBarButtonItem *actionBtn;
+	UIBarButtonItem *backBtn;
+	UIBarButtonItem *forwardBtn;
+	UIBarButtonItem *actionBtn;
 	
 	BOOL showingActions;
 }
@@ -35,6 +35,9 @@
 
 @property (nonatomic, assign) id<ModalViewControllerDelegate> delegate;
 @property (nonatomic, assign) UIWebView *webView;
+@property (nonatomic, retain) UIBarButtonItem *backBtn;
+@property (nonatomic, retain) UIBarButtonItem *forwardBtn;
+@property (nonatomic, retain) UIBarButtonItem *actionBtn;
 
 
 @end

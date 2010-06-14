@@ -11,7 +11,7 @@
 
 @implementation ModalBrowser
 
-@synthesize delegate;
+@synthesize delegate, backBtn, forwardBtn, actionBtn;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -27,16 +27,49 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
+	self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc]
 											   initWithBarButtonSystemItem:UIBarButtonSystemItemDone
 											   target:self
 											   action:@selector(dismissView:)] autorelease];
+	
+	UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"backBtn" ofType:@"png"]] style:UIBarButtonItemStylePlain target:self action:@selector(goBack:)];
+	back.enabled = NO;
+	
+	UIBarButtonItem *filler1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+	[filler1 setWidth:20.0f];
+	
+	UIBarButtonItem *forward = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"forwardBtn" ofType:@"png"]] style:UIBarButtonItemStylePlain target:self action:@selector(goForward:)];
+	forward.enabled = NO;
+	
+	UIBarButtonItem *filler2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+	[filler2 setWidth:20.0f];
+	
+	UIBarButtonItem *refresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(doReload:)];
+	
+	UIBarButtonItem *filler3 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+	[filler3 setWidth:20.0f];
+	
+	UIBarButtonItem *action = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(doAction:)];
+	
+	UIToolbar *bar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f,0.0f,180.0f,44.0f)];
+	[bar setItems:[NSArray arrayWithObjects:back, filler1, forward, filler2, refresh, filler3, action, nil]];
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:bar];
+
+	self.backBtn = back;
+	self.forwardBtn = forward;
+	self.actionBtn = action;
+	[back release];
+	[forward release];
+	[refresh release];
+	[action release];
+	[filler1 release];
+	[filler2 release];
+	[filler3 release];
 	showingActions = NO;
 }
 
 
 - (void) loadURL:(NSURLRequest *)request {
-NSLog(@"got url");
 	[webView loadRequest:request];
 }
 
@@ -140,6 +173,10 @@ NSLog(@"got url");
 }
 
 - (void)dealloc {
+	[backBtn release];
+	[forwardBtn release];
+	[actionBtn release];
+	
     [super dealloc];
 }
 
