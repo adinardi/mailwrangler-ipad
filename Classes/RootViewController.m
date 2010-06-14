@@ -345,6 +345,9 @@
 											   action:@selector(insertNewObject:)] autorelease];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     self.navigationItem.title = @"Accounts";
+	
+	// I would rather just update the cell with an issue, but hey.
+	[self.tableView reloadData];
 }
 
 
