@@ -341,7 +341,7 @@
 }
 
 - (void) doneEditing {
-	self.tableView.scrollEnabled = NO;
+	self.tableView.scrollEnabled = YES;
 	[self showAccountsNavItems];
 	// [self.view addSubview:self.tableView];
 

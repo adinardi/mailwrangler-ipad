@@ -388,7 +388,7 @@
 		fRef = 28042008108E984D000629CD /* RootViewController.m */;
 		name = "RootViewController.m: 350";
 		rLen = 0;
-		rLoc = 13735;
+		rLoc = 13736;
 		rType = 0;
 		vrLen = 1127;
 		vrLoc = 13406;
@@ -1127,7 +1127,7 @@
 		fRef = 28042008108E984D000629CD /* RootViewController.m */;
 		name = "RootViewController.m: 349";
 		rLen = 0;
-		rLoc = 13641;
+		rLoc = 13642;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 13381;
@@ -1137,7 +1137,7 @@
 		fRef = 28042008108E984D000629CD /* RootViewController.m */;
 		name = "RootViewController.m: 351";
 		rLen = 0;
-		rLoc = 13640;
+		rLoc = 13641;
 		rType = 0;
 		vrLen = 1592;
 		vrLoc = 11832;
@@ -1217,7 +1217,7 @@
 		fRef = 28042008108E984D000629CD /* RootViewController.m */;
 		name = "RootViewController.m: 344";
 		rLen = 0;
-		rLoc = 13597;
+		rLoc = 13598;
 		rType = 0;
 		vrLen = 852;
 		vrLoc = 13453;
@@ -1227,10 +1227,20 @@
 		fRef = 28042008108E984D000629CD /* RootViewController.m */;
 		name = "RootViewController.m: 344";
 		rLen = 0;
-		rLoc = 13567;
+		rLoc = 13568;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 13318;
+	};
+	17FA701411C5F1DD00BB45F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042008108E984D000629CD /* RootViewController.m */;
+		name = "RootViewController.m: 344";
+		rLen = 0;
+		rLoc = 13567;
+		rType = 0;
+		vrLen = 1240;
+		vrLoc = 12822;
 	};
 	1D3623240D0F684500981E51 /* MailWranglerForiPadAppDelegate.h */ = {
 		uiCtxt = {
@@ -1261,9 +1271,9 @@
 	};
 	28042008108E984D000629CD /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2329, 6383}}";
+			sepNavIntBoundsRect = "{{0, 0}, {2329, 6331}}";
 			sepNavSelRange = "{13567, 0}";
-			sepNavVisRange = "{13318, 912}";
+			sepNavVisRange = "{12822, 1240}";
 		};
 	};
 	28042009108E984D000629CD /* DetailViewController.h */ = {
@@ -1275,9 +1285,9 @@
 	};
 	2804200A108E984D000629CD /* DetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1328, 4212}}";
-			sepNavSelRange = "{1380, 0}";
-			sepNavVisRange = "{840, 1203}";
+			sepNavIntBoundsRect = "{{0, 0}, {985, 4238}}";
+			sepNavSelRange = "{3306, 0}";
+			sepNavVisRange = "{3073, 740}";
 			sepNavWindowFrame = "{{58, 315}, {750, 558}}";
 		};
 	};
@@ -1447,9 +1457,9 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Distribution;
 		activeExecutable = 17FA11391197B484006E7336 /* MailWrangler */;
-		activeSDKPreference = iphonesimulator3.2;
+		activeSDKPreference = iphoneos3.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* MailWrangler */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* MailWrangler */,
@@ -1636,6 +1646,7 @@
 			17FA6FF111C5DAD900BB45F2 /* PBXTextBookmark */ = 17FA6FF111C5DAD900BB45F2 /* PBXTextBookmark */;
 			17FA6FF611C5DB2E00BB45F2 /* PBXTextBookmark */ = 17FA6FF611C5DB2E00BB45F2 /* PBXTextBookmark */;
 			17FA6FFB11C5DB6400BB45F2 /* PBXTextBookmark */ = 17FA6FFB11C5DB6400BB45F2 /* PBXTextBookmark */;
+			17FA701411C5F1DD00BB45F2 /* PBXTextBookmark */ = 17FA701411C5F1DD00BB45F2 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 17FA114A1197B48B006E7336 /* Source Control */;
 		userBuildSettings = {
