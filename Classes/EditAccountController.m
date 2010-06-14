@@ -11,7 +11,7 @@
 
 @implementation EditAccountController
 
-@synthesize rootViewController, isNewAccount;
+@synthesize rootViewController, isNewAccount, account;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -128,10 +128,10 @@
     [super dealloc];
 }
 
-- (void) setAccount:(NSManagedObject *)managedObject {
-	[account release];
-	account = [managedObject retain];
-}
+//- (void) setAccount:(NSManagedObject *)managedObject {
+//	[account release];
+//	account = [managedObject retain];
+//}
 
 - (void) hitSave:(id)selector {
   if ([descriptionField.text compare:@""] == NSOrderedSame ||
