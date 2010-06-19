@@ -26,7 +26,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
-@property (nonatomic, retain) IBOutlet EditAccountController *editAccount;
+@property (nonatomic, retain) EditAccountController *editAccount;
 @property (nonatomic, retain) IBOutlet UIView *editView;
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;

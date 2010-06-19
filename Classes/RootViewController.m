@@ -21,7 +21,7 @@
 
 @implementation RootViewController
 
-@synthesize detailViewController, fetchedResultsController, managedObjectContext;
+@synthesize detailViewController, fetchedResultsController, managedObjectContext, editAccount;
 
 
 #pragma mark -
@@ -132,8 +132,8 @@
   [username appendString:@"@"];
   [username appendString:[account valueForKey:@"domain"]];
 
-  NSData *keychainItemID = [NSData dataWithBytes:[username UTF8String]
-                            length:strlen([username UTF8String])];
+  /*NSData *keychainItemID = [NSData dataWithBytes:[username UTF8String]
+                            length:strlen([username UTF8String])];*/
 
   // [passwordQuery setObject:keychainItemID forKey:(id)kSecAttrGeneric];
   [passwordQuery setObject:username forKey:(id)kSecAttrAccount];
@@ -166,7 +166,7 @@
 }
 
 - (void) storePasswordForAccount:(NSManagedObject *)account {
-  NSMutableDictionary *passwordQuery = [[NSMutableDictionary alloc] init];
+  NSMutableDictionary *passwordQuery = [[[NSMutableDictionary alloc] init] autorelease];
   // OSStatus keychainErr = noErr;
   
   [passwordQuery setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
@@ -176,8 +176,8 @@
   [username appendString:[account valueForKey:@"domain"]];
 
   // NSLog(@"Working with ID: %@", username);
-  NSData *keychainItemID = [NSData dataWithBytes:[username UTF8String]
-                            length:strlen([username UTF8String])];
+  /*NSData *keychainItemID = [NSData dataWithBytes:[username UTF8String]
+                            length:strlen([username UTF8String])];*/
   
   // [passwordQuery setObject:keychainItemID forKey:(id)kSecAttrGeneric];
   [passwordQuery setObject:username forKey:(id)kSecAttrAccount];
@@ -309,7 +309,8 @@
 
 - (void) showEditAccount:(NSManagedObject *) selectedObject isNewAccount:(bool)isNewAccount {
 	// EditAccountController *acct = [[[EditAccountController alloc] initWithNibName:@"EditAccountController" bundle:nil] retain];
-	EditAccountController *acct = [[[EditAccountController alloc] init] retain];
+	EditAccountController *acct = [[EditAccountController alloc] init];
+	self.editAccount = acct;
   
   acct.isNewAccount = isNewAccount;
   acct.rootViewController = self;
@@ -343,6 +344,7 @@
 - (void) doneEditing {
 	self.tableView.scrollEnabled = YES;
 	[self showAccountsNavItems];
+	self.editAccount = nil;
 	// [self.view addSubview:self.tableView];
 
 	// I would rather just update the cell with an issue, but hey.
@@ -462,8 +464,8 @@
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
+    // [super didReceiveMemoryWarning];
+    // NSLog(@"Root view got memory warning. Ignoring.");
     // Relinquish ownership any cached data, images, etc. that aren't in use.
 }
 

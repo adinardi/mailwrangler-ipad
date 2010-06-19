@@ -109,6 +109,7 @@
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
+	//NSLog(@"Edit account got memory warning. Release.");
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.

@@ -11,7 +11,7 @@
 
 @implementation ModalBrowser
 
-@synthesize delegate, backBtn, forwardBtn, actionBtn;
+@synthesize delegate, backBtn, forwardBtn, actionBtn, webView;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -51,9 +51,9 @@
 	
 	UIBarButtonItem *action = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(doAction:)];
 	
-	UIToolbar *bar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f,0.0f,180.0f,44.0f)];
+	UIToolbar *bar = [[[UIToolbar alloc] initWithFrame:CGRectMake(0.0f,0.0f,180.0f,44.0f)] autorelease];
 	[bar setItems:[NSArray arrayWithObjects:back, filler1, forward, filler2, refresh, filler3, action, nil]];
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:bar];
+	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:bar] autorelease];
 
 	self.backBtn = back;
 	self.forwardBtn = forward;
@@ -125,6 +125,7 @@
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
+	// NSLog(@"Modal browser got memory warning. Release.");
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
@@ -132,15 +133,23 @@
 
 
 - (void)viewDidUnload {
-    [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+	// NSLog(@"view unloading");
+	// self.webView = nil;
+	self.backBtn = nil;
+	self.forwardBtn = nil;
+	self.actionBtn = nil;
+	self.webView = nil;
+	
+	[super viewDidUnload];
 }
 
 - (void)dismissView:(id)sender {
 	
     // Call the delegate to dismiss the modal view
-    [delegate didDismissModalView];
+    // [delegate didDismissModalView];
+	[self dismissModalViewControllerAnimated:YES];
 }
 
 - (void) doAction:(id)selector {
@@ -173,10 +182,11 @@
 }
 
 - (void)dealloc {
-	[backBtn release];
-	[forwardBtn release];
-	[actionBtn release];
-	
+	// NSLog(@"deallocing modal browser");
+	self.backBtn = nil;
+	self.forwardBtn = nil;
+	self.actionBtn = nil;
+	self.webView = nil;
     [super dealloc];
 }
 

@@ -34,7 +34,7 @@
 - (IBAction) doReload:(id)selector;
 
 @property (nonatomic, assign) id<ModalViewControllerDelegate> delegate;
-@property (nonatomic, assign) UIWebView *webView;
+@property (nonatomic, retain) UIWebView *webView;
 @property (nonatomic, retain) UIBarButtonItem *backBtn;
 @property (nonatomic, retain) UIBarButtonItem *forwardBtn;
 @property (nonatomic, retain) UIBarButtonItem *actionBtn;

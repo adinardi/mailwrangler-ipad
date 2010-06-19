@@ -174,15 +174,18 @@
 	//NSLog(@"web view should load %@, %d", request, navigationType);
 	if (navigationType == UIWebViewNavigationTypeLinkClicked) {
 		ModalBrowser *modalBrowser = [[ModalBrowser alloc] initWithNibName:@"ModalBrowser" bundle:nil];
-		modalBrowser.delegate = self;
-	
-		UINavigationController *navController = [[UINavigationController alloc]
-												 initWithRootViewController:modalBrowser];
-		[self presentModalViewController:navController animated:YES];
-		[modalBrowser loadURL:request];
+		// modalBrowser.delegate = self;
 
-    // [modalBrowser release];
-    [navController release];
+		UINavigationController *modalNavController = [[UINavigationController alloc]
+								initWithRootViewController:modalBrowser];
+		[self presentModalViewController:modalNavController animated:YES];
+		[modalBrowser loadURL:request];
+		
+		[modalBrowser autorelease];
+		[modalNavController autorelease];
+		
+		//[modalBrowser release];
+		//[modalNavController release];
 	
 		return NO;
 	}
@@ -191,10 +194,9 @@
 }
 
 - (void)didDismissModalView {
-	
+	NSLog(@"did dismiss");
     // Dismiss the modal view controller
-    [self dismissModalViewControllerAnimated:YES];
-	
+    // [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void) webViewDidStartLoad:(UIWebView *) view {
@@ -290,7 +292,8 @@
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
+    // [super didReceiveMemoryWarning];
+	NSLog(@"Detail view got memory warning. Ignoring.");
 	
 	// Release any cached data, images, etc that aren't in use.
 }
