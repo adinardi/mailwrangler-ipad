@@ -90,7 +90,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1734, 2535}}";
 			sepNavSelRange = "{4364, 5}";
-			sepNavVisRange = "{3946, 899}";
+			sepNavVisRange = "{3891, 920}";
 		};
 	};
 	17899E0111A9203400FCCABA /* PBXTextBookmark */ = {
@@ -1649,6 +1649,90 @@
 		vrLen = 899;
 		vrLoc = 3946;
 	};
+	1797B76F11CD935B00E80788 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
+		name = "DetailViewController.m: 182";
+		rLen = 0;
+		rLoc = 6378;
+		rType = 0;
+		vrLen = 767;
+		vrLoc = 5633;
+	};
+	1797B77011CD935B00E80788 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Object allocated on line 169 and stored into 'passwordQuery' is no longer referenced after this point and has a retain count of +1 (object leaked)";
+		fRef = 28042008108E984D000629CD /* RootViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 191;
+		rType = 1;
+	};
+	1797B77111CD935B00E80788 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042008108E984D000629CD /* RootViewController.m */;
+		name = "RootViewController.m: 169";
+		rLen = 0;
+		rLoc = 6385;
+		rType = 0;
+		vrLen = 1621;
+		vrLoc = 6130;
+	};
+	1797B77211CD935D00E80788 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17899DFC11A9202000FCCABA /* ModalBrowser.m */;
+		name = "ModalBrowser.m: 128";
+		rLen = 5;
+		rLoc = 4364;
+		rType = 0;
+		vrLen = 899;
+		vrLoc = 3946;
+	};
+	1797B77311CD935D00E80788 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 6490043811C0CD2E00EFADAF /* Entitlements.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/angelo/Dropbox/Code/MailWranglerForiPad/Entitlements.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1797B77411CD935D00E80788 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleVersion,
+		);
+		name = "/Users/angelo/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1797B77511CD935D00E80788 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/angelo/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1797B77811CD93AB00E80788 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* MailWranglerForiPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/angelo/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
 	17A7378511C5B38400027482 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 28042009108E984D000629CD /* DetailViewController.h */;
@@ -2861,9 +2945,9 @@
 	};
 	28042008108E984D000629CD /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {2343, 6630}}";
-			sepNavSelRange = "{1472, 5}";
-			sepNavVisRange = "{674, 1146}";
+			sepNavIntBoundsRect = "{{0, 0}, {957, 6123}}";
+			sepNavSelRange = "{6385, 0}";
+			sepNavVisRange = "{6130, 1621}";
 		};
 	};
 	28042009108E984D000629CD /* DetailViewController.h */ = {
@@ -3047,7 +3131,7 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Distribution;
 		activeExecutable = 17FA11391197B484006E7336 /* MailWrangler */;
 		activeSDKPreference = iphoneos3.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* MailWrangler */;
@@ -3286,6 +3370,14 @@
 			1797B75E11CD8FE600E80788 /* PBXTextBookmark */ = 1797B75E11CD8FE600E80788 /* PBXTextBookmark */;
 			1797B75F11CD8FE600E80788 /* PBXTextBookmark */ = 1797B75F11CD8FE600E80788 /* PBXTextBookmark */;
 			1797B76411CD900A00E80788 /* PBXTextBookmark */ = 1797B76411CD900A00E80788 /* PBXTextBookmark */;
+			1797B76F11CD935B00E80788 /* PBXTextBookmark */ = 1797B76F11CD935B00E80788 /* PBXTextBookmark */;
+			1797B77011CD935B00E80788 /* XCBuildMessageTextBookmark */ = 1797B77011CD935B00E80788 /* XCBuildMessageTextBookmark */;
+			1797B77111CD935B00E80788 /* PBXTextBookmark */ = 1797B77111CD935B00E80788 /* PBXTextBookmark */;
+			1797B77211CD935D00E80788 /* PBXTextBookmark */ = 1797B77211CD935D00E80788 /* PBXTextBookmark */;
+			1797B77311CD935D00E80788 /* PlistBookmark */ = 1797B77311CD935D00E80788 /* PlistBookmark */;
+			1797B77411CD935D00E80788 /* PlistBookmark */ = 1797B77411CD935D00E80788 /* PlistBookmark */;
+			1797B77511CD935D00E80788 /* PlistBookmark */ = 1797B77511CD935D00E80788 /* PlistBookmark */;
+			1797B77811CD93AB00E80788 /* PlistBookmark */ = 1797B77811CD93AB00E80788 /* PlistBookmark */;
 			17A7378511C5B38400027482 = 17A7378511C5B38400027482 /* PBXTextBookmark */;
 			17BC89FC11C5B3BD004040EB = 17BC89FC11C5B3BD004040EB /* PBXTextBookmark */;
 			17F2DA981199C93600740CCF = 17F2DA981199C93600740CCF /* PBXTextBookmark */;

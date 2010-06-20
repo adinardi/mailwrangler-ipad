@@ -276,8 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
-									<integer>1</integer>
+									<integer>25</integer>
+									<integer>15</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -312,14 +312,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ModalBrowser.m</string>
+								<string>MailWranglerForiPad-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,18 +325,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ModalBrowser.m</string>
+										<string>MailWranglerForiPad-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1797B76411CD900A00E80788</string>
+										<string>1797B77811CD93AB00E80788</string>
 										<key>history</key>
 										<array>
 											<string>17FA11B61197E39F006E7336</string>
 											<string>17FA12541197F2A4006E7336</string>
 											<string>17310D7C11ACF58100951BAB</string>
 											<string>171723E111C5B13100EEBDC3</string>
-											<string>17FA6EF111C5C37800BB45F2</string>
 											<string>1797B5BA11CD550D00E80788</string>
 											<string>1797B5BB11CD550D00E80788</string>
 											<string>1797B5BC11CD550D00E80788</string>
@@ -349,7 +346,9 @@
 											<string>1797B75511CD8F5400E80788</string>
 											<string>1797B75A11CD8FBA00E80788</string>
 											<string>1797B75D11CD8FE600E80788</string>
-											<string>1797B75E11CD8FE600E80788</string>
+											<string>1797B77211CD935D00E80788</string>
+											<string>1797B77311CD935D00E80788</string>
+											<string>1797B77411CD935D00E80788</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -549,8 +548,8 @@
 	<array>
 		<string>1797B5C311CD550D00E80788</string>
 		<string>1797B5C411CD550D00E80788</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>17FA11481197B48B006E7336</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/angelo/Dropbox/Code/MailWranglerForiPad/MailWranglerForiPad.xcodeproj</string>
 	</array>
@@ -571,8 +570,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -595,6 +592,8 @@
 							<string>437pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -647,7 +646,7 @@
 			<key>WindowToolGUID</key>
 			<string>17FA11481197B48B006E7336</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
