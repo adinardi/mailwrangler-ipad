@@ -23,7 +23,7 @@
 
 @implementation MailWranglerForiPadAppDelegate
 
-@synthesize window, splitViewController, rootViewController, detailViewController;
+@synthesize window, splitViewController, rootViewController, detailViewController, editAccountController;
 
 
 #pragma mark -

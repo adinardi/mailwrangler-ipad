@@ -17,7 +17,7 @@
 
 
 
-@implementation DetailViewController
+@implementation DetailViewController;
 
 @synthesize toolbar,
             popoverController,
@@ -88,14 +88,22 @@
     // detailDescriptionLabel.text = [[detailItem valueForKey:@"timeStamp"] description];
 	
 	[webView setDelegate:self];
+    
+    NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    NSArray *cookies = [cookieStorage cookies];
+    NSEnumerator *enumerate = [cookies objectEnumerator];
+    NSHTTPCookie *cookie;
+    while (cookie = [enumerate nextObject]) {
+        [cookieStorage deleteCookie:cookie];
+    }
 	
 	NSString *domain = [detailItem valueForKey:@"domain"];
 	//NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
 	NSURL *url = nil;
 	if ([domain compare:@"gmail.com"] == NSOrderedSame) {
-		url = [NSURL URLWithString:@"https://mail.google.com/mail/?logout"];
+		url = [NSURL URLWithString:@"https://mail.google.com/"];
 	} else {
-		NSString *domainString = [NSString stringWithFormat:@"https://mail.google.com/a/%@/?logout", domain];
+		NSString *domainString = [NSString stringWithFormat:@"https://mail.google.com/a/%@", domain];
 		url = [NSURL URLWithString:domainString];
 	}
   
