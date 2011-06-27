@@ -266,6 +266,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Angelo DINARDI";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MailWranglerForiPad_Prefix.pch;
@@ -273,6 +274,7 @@
 				INFOPLIST_FILE = "MailWranglerForiPad-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = MailWranglerForiPad;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43CB8FED-72A1-41E7-93AE-68797B205882";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Ad Hoc";

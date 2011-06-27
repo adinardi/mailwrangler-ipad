@@ -93,8 +93,10 @@
     NSArray *cookies = [cookieStorage cookies];
     NSEnumerator *enumerate = [cookies objectEnumerator];
     NSHTTPCookie *cookie;
-    while (cookie = [enumerate nextObject]) {
-        [cookieStorage deleteCookie:cookie];
+    while ((cookie = [enumerate nextObject])) {
+        if (![[cookie name] isEqualToString:@"SMSV"]) {
+            [cookieStorage deleteCookie:cookie];
+        }
     }
 	
 	NSString *domain = [detailItem valueForKey:@"domain"];
