@@ -102,12 +102,12 @@
 	NSString *domain = [detailItem valueForKey:@"domain"];
 	//NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
 	NSURL *url = nil;
-	if ([domain compare:@"gmail.com"] == NSOrderedSame) {
+//	if ([domain compare:@"gmail.com"] == NSOrderedSame) {
 		url = [NSURL URLWithString:@"https://mail.google.com/"];
-	} else {
-		NSString *domainString = [NSString stringWithFormat:@"https://mail.google.com/a/%@", domain];
-		url = [NSURL URLWithString:domainString];
-	}
+//	} else {
+//		NSString *domainString = [NSString stringWithFormat:@"https://mail.google.com/a/%@", domain];
+//		url = [NSURL URLWithString:domainString];
+//	}
   
   self.navBar.topItem.title = [detailItem valueForKey:@"desc"];
 		 
@@ -124,7 +124,7 @@
 - (void) webViewDidFinishLoad:(UIWebView *) view {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 	
-	NSString *username = [detailItem valueForKey:@"username"];
+	NSString *username = [NSString stringWithFormat:@"%@@%@", [detailItem valueForKey:@"username"], [detailItem valueForKey:@"domain"]];
 	NSString *password = self.currentPassword;
 	// NSString *domain = [detailItem valueForKey:@"domain"];
 	
